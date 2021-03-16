@@ -1,0 +1,11 @@
+framework module DzTvOSBase {
+  umbrella header "DzTvOSBase.h"
+
+  export *
+  module * { export * }
+}
+
+module DzTvOSBase.Swift {
+    header "DzTvOSBase-Swift.h"
+    requires objc
+}

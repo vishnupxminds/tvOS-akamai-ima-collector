@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AmpIMA
+import AmpCore
+@_exported import AmpIMA
+import GoogleInteractiveMediaAds
+import Swift
+extension AmpIMAManager {
+  @objc dynamic public func registerImaObserver(_ observer: GoogleInteractiveMediaAds.IMAAdsManagerDelegate) -> Swift.Int
+  public func requestImaAds(adTagUrl: Swift.String)
+}
+extension AmpIMAManager : GoogleInteractiveMediaAds.IMAAdsManagerDelegate {
+  @objc dynamic public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent!)
+  @objc dynamic public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!, didReceive error: GoogleInteractiveMediaAds.IMAAdError!)
+  @objc dynamic public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!)
+  @objc dynamic public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!)
+  @objc dynamic public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!, adDidProgressToTime mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
+  @objc dynamic public func adsManagerAdPlaybackReady(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!)
+  @objc dynamic public func adsManagerAdDidStartBuffering(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!)
+  @objc dynamic public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager!, adDidBufferToMediaTime mediaTime: Foundation.TimeInterval)
+}
+@_hasMissingDesignatedInitializers @objc public class AmpIMAManager : ObjectiveC.NSObject {
+  public enum ResourceType {
+    case ima, dai
+    public static func == (a: AmpIMA.AmpIMAManager.ResourceType, b: AmpIMA.AmpIMAManager.ResourceType) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public var adsRenderingSettings: GoogleInteractiveMediaAds.IMAAdsRenderingSettings
+  public var adCollitionPrecedence: AmpIMA.AmpIMAManager.ResourceType
+  public var imaObservers: AmpCore.Observable<GoogleInteractiveMediaAds.IMAAdsManagerDelegate>
+  public var imaBitrate: Swift.Int?
+  public var imaMimeTypes: [Swift.String]?
+  public var daiObservers: AmpCore.Observable<GoogleInteractiveMediaAds.IMAStreamManagerDelegate>
+  convenience public init(ampPlayer: AmpCore.AmpPlayer, videoView: UIKit.UIView, settings: GoogleInteractiveMediaAds.IMASettings? = nil)
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension AmpIMAManager : GoogleInteractiveMediaAds.IMAAdsLoaderDelegate {
+  @objc dynamic public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader!, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData!)
+  @objc dynamic public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader!, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData!)
+}
+extension AmpIMAManager : AmpCore.PlayerEventObserver {
+  @objc dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onHandledDidBecomeActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onExternalAdStarted(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onExternalAdEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onSeekEnd(_ time: Foundation.TimeInterval)
+  @objc dynamic public func onSeekBegan()
+}
+extension AmpIMAManager {
+  @objc dynamic public func registerDaiObserver(_ observer: GoogleInteractiveMediaAds.IMAStreamManagerDelegate) -> Swift.Int
+  public func requestLiveStream(assetkey: Swift.String, fallbackUrl: Swift.String? = nil, adTagParameters: [Swift.String : Swift.String]? = nil, manifestURLSuffix: Swift.String? = nil)
+  public func requestVodStream(contentSourceID: Swift.String, videoID: Swift.String, fallbackUrl: Swift.String? = nil, adTagParameters: [Swift.String : Swift.String]? = nil)
+}
+extension AmpIMAManager : GoogleInteractiveMediaAds.IMAStreamManagerDelegate {
+  @objc dynamic public func streamManager(_ streamManager: GoogleInteractiveMediaAds.IMAStreamManager!, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent!)
+  @objc dynamic public func streamManager(_ streamManager: GoogleInteractiveMediaAds.IMAStreamManager!, didReceive error: GoogleInteractiveMediaAds.IMAAdError!)
+  @objc dynamic public func streamManager(_ streamManager: GoogleInteractiveMediaAds.IMAStreamManager!, adDidProgressToTime time: Foundation.TimeInterval, adDuration: Foundation.TimeInterval, adPosition: Swift.Int, totalAds: Swift.Int, adBreakDuration: Foundation.TimeInterval)
+}
+extension AmpIMA.AmpIMAManager.ResourceType : Swift.Equatable {}
+extension AmpIMA.AmpIMAManager.ResourceType : Swift.Hashable {}

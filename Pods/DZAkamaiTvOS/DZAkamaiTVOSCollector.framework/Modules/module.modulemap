@@ -1,0 +1,11 @@
+framework module DZAkamaiTVOSCollector {
+  umbrella header "DZAkamaiTVOSCollector.h"
+
+  export *
+  module * { export * }
+}
+
+module DZAkamaiTVOSCollector.Swift {
+    header "DZAkamaiTVOSCollector-Swift.h"
+    requires objc
+}

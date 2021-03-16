@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C65AD4B25FF73EC00EC3E53 /* tvos-akamai-IMA-collectorFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0C65AD4C25FF73EC00EC3E53 /* Build configuration list for PBXAggregateTarget "tvos-akamai-IMA-collectorFramework" */;
+			buildPhases = (
+				0C65AD5225FF73FA00EC3E53 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "tvos-akamai-IMA-collectorFramework";
+			productName = "tvos-akamai-IMA-collectorFramework";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C65ACBE25FF508000EC3E53 /* tvos_akamai_IMA_collector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C65ACB425FF508000EC3E53 /* tvos_akamai_IMA_collector.framework */; };
+		0C65ACC325FF508000EC3E53 /* tvos_akamai_IMA_collectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65ACC225FF508000EC3E53 /* tvos_akamai_IMA_collectorTests.swift */; };
+		0C65ACC525FF508000EC3E53 /* tvos_akamai_IMA_collector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C65ACB725FF508000EC3E53 /* tvos_akamai_IMA_collector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C65AD5D25FF78AC00EC3E53 /* tvOSAkamaiIMACollectorInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65AD5C25FF78AC00EC3E53 /* tvOSAkamaiIMACollectorInstance.swift */; };
+		0C65AD6C25FF882C00EC3E53 /* tvOSAkamaiIMAObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65AD6B25FF882C00EC3E53 /* tvOSAkamaiIMAObserver.swift */; };
+		0C65AD7425FF8A2500EC3E53 /* DZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65AD7225FF8A2500EC3E53 /* DZUtils.swift */; };
+		236686912C6991A4E206F52E /* Pods_tvos_akamai_IMA_collector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB84569A0A615C1FB732A9 /* Pods_tvos_akamai_IMA_collector.framework */; };
+		856BC88AE4962D478AEE0C24 /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2820D486A4D834C043546262 /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C65ACBF25FF508000EC3E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C65ACAB25FF508000EC3E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C65ACB325FF508000EC3E53;
+			remoteInfo = "tvos-akamai-IMA-collector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C65ACB425FF508000EC3E53 /* tvos_akamai_IMA_collector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tvos_akamai_IMA_collector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C65ACB725FF508000EC3E53 /* tvos_akamai_IMA_collector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tvos_akamai_IMA_collector.h; sourceTree = "<group>"; };
+		0C65ACB825FF508000EC3E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C65ACBD25FF508000EC3E53 /* tvos-akamai-IMA-collectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvos-akamai-IMA-collectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C65ACC225FF508000EC3E53 /* tvos_akamai_IMA_collectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvos_akamai_IMA_collectorTests.swift; sourceTree = "<group>"; };
+		0C65ACC425FF508000EC3E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C65AD0D25FF6F4800EC3E53 /* tvos_akamai_IMA_collectorFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tvos_akamai_IMA_collectorFramework.h; sourceTree = "<group>"; };
+		0C65AD0E25FF6F4800EC3E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C65AD1825FF6F4800EC3E53 /* tvos_akamai_IMA_collectorFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvos_akamai_IMA_collectorFrameworkTests.swift; sourceTree = "<group>"; };
+		0C65AD1A25FF6F4800EC3E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C65AD3825FF710A00EC3E53 /* tvos-akamai-IMA-collector copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "tvos-akamai-IMA-collector copy-Info.plist"; path = "/Users/jijogoommen/Desktop/BitBucket Repos/dataZoom GitLab/tvos-akamai-IMA-collector/tvos-akamai-IMA-collector copy-Info.plist"; sourceTree = "<absolute>"; };
+		0C65AD5C25FF78AC00EC3E53 /* tvOSAkamaiIMACollectorInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSAkamaiIMACollectorInstance.swift; sourceTree = "<group>"; };
+		0C65AD6B25FF882C00EC3E53 /* tvOSAkamaiIMAObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSAkamaiIMAObserver.swift; sourceTree = "<group>"; };
+		0C65AD7225FF8A2500EC3E53 /* DZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZUtils.swift; sourceTree = "<group>"; };
+		14DB84569A0A615C1FB732A9 /* Pods_tvos_akamai_IMA_collector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvos_akamai_IMA_collector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2820D486A4D834C043546262 /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42602E6E9F37B7EB46BD0A64 /* Pods-tvos-akamai-IMA-collector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos-akamai-IMA-collector.release.xcconfig"; path = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector.release.xcconfig"; sourceTree = "<group>"; };
+		DE092205799F5DAD5793E0E0 /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos-akamai-IMA-collector.debug.xcconfig"; path = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector.debug.xcconfig"; sourceTree = "<group>"; };
+		EF537F28F2295328B99A544A /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig"; path = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD6C05B450D93BB3C814A7BE /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig"; path = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C65ACB125FF508000EC3E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236686912C6991A4E206F52E /* Pods_tvos_akamai_IMA_collector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C65ACBA25FF508000EC3E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C65ACBE25FF508000EC3E53 /* tvos_akamai_IMA_collector.framework in Frameworks */,
+				856BC88AE4962D478AEE0C24 /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C65ACAA25FF508000EC3E53 = {
+			isa = PBXGroup;
+			children = (
+				0C65ACB625FF508000EC3E53 /* tvos-akamai-IMA-collector */,
+				0C65ACC125FF508000EC3E53 /* tvos-akamai-IMA-collectorTests */,
+				0C65AD0C25FF6F4800EC3E53 /* tvos-akamai-IMA-collectorFramework */,
+				0C65AD1725FF6F4800EC3E53 /* tvos-akamai-IMA-collectorFrameworkTests */,
+				0C65ACB525FF508000EC3E53 /* Products */,
+				8BEDE37080C4322A7872BFD3 /* Pods */,
+				591A3615F69503E4A02E8FD8 /* Frameworks */,
+				0C65AD3825FF710A00EC3E53 /* tvos-akamai-IMA-collector copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		0C65ACB525FF508000EC3E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C65ACB425FF508000EC3E53 /* tvos_akamai_IMA_collector.framework */,
+				0C65ACBD25FF508000EC3E53 /* tvos-akamai-IMA-collectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C65ACB625FF508000EC3E53 /* tvos-akamai-IMA-collector */ = {
+			isa = PBXGroup;
+			children = (
+				0C65ACB725FF508000EC3E53 /* tvos_akamai_IMA_collector.h */,
+				0C65ACB825FF508000EC3E53 /* Info.plist */,
+				0C65AD5C25FF78AC00EC3E53 /* tvOSAkamaiIMACollectorInstance.swift */,
+				0C65AD6B25FF882C00EC3E53 /* tvOSAkamaiIMAObserver.swift */,
+				0C65AD7025FF8A2500EC3E53 /* Utilities */,
+			);
+			path = "tvos-akamai-IMA-collector";
+			sourceTree = "<group>";
+		};
+		0C65ACC125FF508000EC3E53 /* tvos-akamai-IMA-collectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C65ACC225FF508000EC3E53 /* tvos_akamai_IMA_collectorTests.swift */,
+				0C65ACC425FF508000EC3E53 /* Info.plist */,
+			);
+			path = "tvos-akamai-IMA-collectorTests";
+			sourceTree = "<group>";
+		};
+		0C65AD0C25FF6F4800EC3E53 /* tvos-akamai-IMA-collectorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0C65AD0D25FF6F4800EC3E53 /* tvos_akamai_IMA_collectorFramework.h */,
+				0C65AD0E25FF6F4800EC3E53 /* Info.plist */,
+			);
+			path = "tvos-akamai-IMA-collectorFramework";
+			sourceTree = "<group>";
+		};
+		0C65AD1725FF6F4800EC3E53 /* tvos-akamai-IMA-collectorFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C65AD1825FF6F4800EC3E53 /* tvos_akamai_IMA_collectorFrameworkTests.swift */,
+				0C65AD1A25FF6F4800EC3E53 /* Info.plist */,
+			);
+			path = "tvos-akamai-IMA-collectorFrameworkTests";
+			sourceTree = "<group>";
+		};
+		0C65AD7025FF8A2500EC3E53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0C65AD7225FF8A2500EC3E53 /* DZUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		591A3615F69503E4A02E8FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14DB84569A0A615C1FB732A9 /* Pods_tvos_akamai_IMA_collector.framework */,
+				2820D486A4D834C043546262 /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BEDE37080C4322A7872BFD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE092205799F5DAD5793E0E0 /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */,
+				42602E6E9F37B7EB46BD0A64 /* Pods-tvos-akamai-IMA-collector.release.xcconfig */,
+				FD6C05B450D93BB3C814A7BE /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */,
+				EF537F28F2295328B99A544A /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C65ACAF25FF508000EC3E53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C65ACC525FF508000EC3E53 /* tvos_akamai_IMA_collector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C65ACB325FF508000EC3E53 /* tvos-akamai-IMA-collector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C65ACC825FF508000EC3E53 /* Build configuration list for PBXNativeTarget "tvos-akamai-IMA-collector" */;
+			buildPhases = (
+				52DDD088D2B5249057A7F5EE /* [CP] Check Pods Manifest.lock */,
+				0C65ACAF25FF508000EC3E53 /* Headers */,
+				0C65ACB025FF508000EC3E53 /* Sources */,
+				0C65ACB125FF508000EC3E53 /* Frameworks */,
+				0C65ACB225FF508000EC3E53 /* Resources */,
+				0C65AD0325FF6D1100EC3E53 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvos-akamai-IMA-collector";
+			productName = "tvos-akamai-IMA-collector";
+			productReference = 0C65ACB425FF508000EC3E53 /* tvos_akamai_IMA_collector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C65ACBC25FF508000EC3E53 /* tvos-akamai-IMA-collectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C65ACCB25FF508000EC3E53 /* Build configuration list for PBXNativeTarget "tvos-akamai-IMA-collectorTests" */;
+			buildPhases = (
+				5AF9E77641BB70E7545C8BBE /* [CP] Check Pods Manifest.lock */,
+				0C65ACB925FF508000EC3E53 /* Sources */,
+				0C65ACBA25FF508000EC3E53 /* Frameworks */,
+				0C65ACBB25FF508000EC3E53 /* Resources */,
+				0A2778CC0D9D8789670ED828 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C65ACC025FF508000EC3E53 /* PBXTargetDependency */,
+			);
+			name = "tvos-akamai-IMA-collectorTests";
+			productName = "tvos-akamai-IMA-collectorTests";
+			productReference = 0C65ACBD25FF508000EC3E53 /* tvos-akamai-IMA-collectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C65ACAB25FF508000EC3E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					0C65ACB325FF508000EC3E53 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					0C65ACBC25FF508000EC3E53 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					0C65AD4B25FF73EC00EC3E53 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 0C65ACAE25FF508000EC3E53 /* Build configuration list for PBXProject "tvos-akamai-IMA-collector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C65ACAA25FF508000EC3E53;
+			productRefGroup = 0C65ACB525FF508000EC3E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C65ACB325FF508000EC3E53 /* tvos-akamai-IMA-collector */,
+				0C65ACBC25FF508000EC3E53 /* tvos-akamai-IMA-collectorTests */,
+				0C65AD4B25FF73EC00EC3E53 /* tvos-akamai-IMA-collectorFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C65ACB225FF508000EC3E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C65ACBB25FF508000EC3E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A2778CC0D9D8789670ED828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C65AD0325FF6D1100EC3E53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		0C65AD5225FF73FA00EC3E53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_NAME=\"tvos-akamai-IMA-collector\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_BCSYMBOLMAP_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvos\"\n\nDEVICE_DSYM_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvos/${FRAMEWORK_NAME}.framework.dSYM\"\nSIMULATOR_DSYM_PATH=\"${BUILD_DIR}/${CONFIGURATION}-appletvsimulator/${FRAMEWORK_NAME}.framework.dSYM\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-appletvuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\nOUTPUT_DIR=\"./tvos-akamai-IMA-collector-Aggregated\"\n\nXcodebuild -workspace ${PROJECT_NAME}.xcworkspace ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO  -scheme ${FRAMEWORK_NAME} -sdk appletvsimulator -configuration ${CONFIGURATION} install CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvsimulator OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\nXcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${FRAMEWORK_NAME} -sdk appletvos -configuration ${CONFIGURATION} install CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-appletvos OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\nrm -rf \"$OUTPUT_DIR\"\nmkdir -p \"$OUTPUT_DIR\"\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\ncp -r \"${SIMULATOR_LIBRARY_PATH}/Modules/.\" \"${FRAMEWORK}/Modules/\"\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\ncp -r \"${DEVICE_DSYM_PATH}\" \"$OUTPUT_DIR\"\nlipo -create -output \"$OUTPUT_DIR/${FRAMEWORK_NAME}.framework.dSYM/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" \\\n\"${DEVICE_DSYM_PATH}/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" \\\n\"${SIMULATOR_DSYM_PATH}/Contents/Resources/DWARF/${FRAMEWORK_NAME}\" || exit 1\n\nUUIDs=$(dwarfdump --uuid \"${DEVICE_DSYM_PATH}\" | cut -d ' ' -f2)\nfor file in `find \"${DEVICE_BCSYMBOLMAP_PATH}\" -name \"*.bcsymbolmap\" -type f`; do\nfileName=$(basename \"$file\" \".bcsymbolmap\")\nfor UUID in $UUIDs; do\nif [[ \"$UUID\" = \"$fileName\" ]]; then\ncp -R \"$file\" \"$OUTPUT_DIR\"\ndsymutil --symbol-map \"$OUTPUT_DIR\"/\"$fileName\".bcsymbolmap \"$OUTPUT_DIR/${FRAMEWORK_NAME}.framework.dSYM\"\nfi\ndone\ndone\n";
+		};
+		52DDD088D2B5249057A7F5EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tvos-akamai-IMA-collector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF9E77641BB70E7545C8BBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C65ACB025FF508000EC3E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C65AD5D25FF78AC00EC3E53 /* tvOSAkamaiIMACollectorInstance.swift in Sources */,
+				0C65AD6C25FF882C00EC3E53 /* tvOSAkamaiIMAObserver.swift in Sources */,
+				0C65AD7425FF8A2500EC3E53 /* DZUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C65ACB925FF508000EC3E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C65ACC325FF508000EC3E53 /* tvos_akamai_IMA_collectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C65ACC025FF508000EC3E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C65ACB325FF508000EC3E53 /* tvos-akamai-IMA-collector */;
+			targetProxy = 0C65ACBF25FF508000EC3E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C65ACC625FF508000EC3E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C65ACC725FF508000EC3E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C65ACC925FF508000EC3E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE092205799F5DAD5793E0E0 /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "tvos-akamai-IMA-collector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xminds.tvos-akamai-IMA-collector";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		0C65ACCA25FF508000EC3E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42602E6E9F37B7EB46BD0A64 /* Pods-tvos-akamai-IMA-collector.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "tvos-akamai-IMA-collector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xminds.tvos-akamai-IMA-collector";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Release;
+		};
+		0C65ACCC25FF508000EC3E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6C05B450D93BB3C814A7BE /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tvos-akamai-IMA-collectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xminds.tvos-akamai-IMA-collectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		0C65ACCD25FF508000EC3E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF537F28F2295328B99A544A /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tvos-akamai-IMA-collectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xminds.tvos-akamai-IMA-collectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		0C65AD4D25FF73EC00EC3E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C65AD4E25FF73EC00EC3E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C65ACAE25FF508000EC3E53 /* Build configuration list for PBXProject "tvos-akamai-IMA-collector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C65ACC625FF508000EC3E53 /* Debug */,
+				0C65ACC725FF508000EC3E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0C65ACC825FF508000EC3E53 /* Build configuration list for PBXNativeTarget "tvos-akamai-IMA-collector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C65ACC925FF508000EC3E53 /* Debug */,
+				0C65ACCA25FF508000EC3E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0C65ACCB25FF508000EC3E53 /* Build configuration list for PBXNativeTarget "tvos-akamai-IMA-collectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C65ACCC25FF508000EC3E53 /* Debug */,
+				0C65ACCD25FF508000EC3E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0C65AD4C25FF73EC00EC3E53 /* Build configuration list for PBXAggregateTarget "tvos-akamai-IMA-collectorFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C65AD4D25FF73EC00EC3E53 /* Debug */,
+				0C65AD4E25FF73EC00EC3E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C65ACAB25FF508000EC3E53 /* Project object */;
+}

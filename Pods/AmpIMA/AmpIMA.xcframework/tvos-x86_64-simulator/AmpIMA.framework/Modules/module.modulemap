@@ -1,0 +1,11 @@
+framework module AmpIMA {
+  umbrella header "AmpIMA.h"
+
+  export *
+  module * { export * }
+}
+
+module AmpIMA.Swift {
+    header "AmpIMA-Swift.h"
+    requires objc
+}

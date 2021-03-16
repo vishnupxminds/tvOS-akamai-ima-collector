@@ -1,0 +1,1257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		08782C8850BBA53EE9F18980EAA31A39 /* DZTvOSBase */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C31B4D54A5AD64C80C888A7FAF6F6BE8 /* Build configuration list for PBXAggregateTarget "DZTvOSBase" */;
+			buildPhases = (
+				7A351C35916D1BAD8DAA5CB8155C4E3C /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+			);
+			name = DZTvOSBase;
+		};
+		481B172C89E831166E2DFD4B1EEA310C /* AmpIMA */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 51E7AA4045E975070AE1BC31E495CDC6 /* Build configuration list for PBXAggregateTarget "AmpIMA" */;
+			buildPhases = (
+				60E465513FC8F07DE0193E2513C3DDB1 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				FF58CACF172B685F1C21947819E8E29F /* PBXTargetDependency */,
+			);
+			name = AmpIMA;
+		};
+		8D8DD638EFFF8DBE3599EC57E5CC1036 /* GoogleAds-IMA-tvOS-SDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7C54B6084BBE7EFD0FBE5399DDBF0745 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-tvOS-SDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "GoogleAds-IMA-tvOS-SDK";
+		};
+		8E30EB118F4EFA58542505FADD9221BB /* AmpCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB89D6F97F04651626073C5901969935 /* Build configuration list for PBXAggregateTarget "AmpCore" */;
+			buildPhases = (
+				444943F7A41EB4F2F678E83AB904D24B /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = AmpCore;
+		};
+		F107BE375DE32C7BB83DBD64B0BDDF01 /* DZAkamaiTvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F326F86AB0F815ECC7C0A0CA5518F0A1 /* Build configuration list for PBXAggregateTarget "DZAkamaiTvOS" */;
+			buildPhases = (
+				4AA6DB12B52B820AC75B30EB8CFD7049 /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+				8214E98F410FC350FAF425116AC5D1FA /* PBXTargetDependency */,
+			);
+			name = DZAkamaiTvOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1E512B8D646D4D2A5EBBCF09A93E5191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		31D36F18AAB8C2C9F1E2CC7320FD52AD /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED09DCA0E7E529A241B573F595F0F5D2 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C08162F9D547844DBF01F65C66140D6 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA15C6BA1543FD44C413AB60BFD2B /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m */; };
+		7DD6A0C66CC7F55D94823F5BE4181A7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		DA9C0BD7235182D89D29C2F1A312FE3E /* Pods-tvos-akamai-IMA-collector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C2D43E8365062FA0B95AC352CA0E0D /* Pods-tvos-akamai-IMA-collector-dummy.m */; };
+		FFE5076D3D80347CEF5FC5A0E91A7264 /* Pods-tvos-akamai-IMA-collector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D42FBDA716081AA979E20D9664C13C3 /* Pods-tvos-akamai-IMA-collector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A176B786305CE6FCA489CF7C918D5E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F107BE375DE32C7BB83DBD64B0BDDF01;
+			remoteInfo = DZAkamaiTvOS;
+		};
+		0F3BDD15D72C0DA144DDD670C5C2534F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8DD638EFFF8DBE3599EC57E5CC1036;
+			remoteInfo = "GoogleAds-IMA-tvOS-SDK";
+		};
+		208D0FB987D30668F8CE6F69FA1F09AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08782C8850BBA53EE9F18980EAA31A39;
+			remoteInfo = DZTvOSBase;
+		};
+		6E906A85463CC0FB34AA255DCCD96684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08782C8850BBA53EE9F18980EAA31A39;
+			remoteInfo = DZTvOSBase;
+		};
+		6FF7CD876AFE168202BCA9FDB9AFC934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D8DD638EFFF8DBE3599EC57E5CC1036;
+			remoteInfo = "GoogleAds-IMA-tvOS-SDK";
+		};
+		74040C0B7F23B758C8914C094D776164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F107BE375DE32C7BB83DBD64B0BDDF01;
+			remoteInfo = DZAkamaiTvOS;
+		};
+		746C027A74485DB54227BBE44F28F344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481B172C89E831166E2DFD4B1EEA310C;
+			remoteInfo = AmpIMA;
+		};
+		7D73374579C998FA2692040F7C341DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E30EB118F4EFA58542505FADD9221BB;
+			remoteInfo = AmpCore;
+		};
+		8C99DE72A1B445F02C25E0DEA8A58766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08782C8850BBA53EE9F18980EAA31A39;
+			remoteInfo = DZTvOSBase;
+		};
+		A8C69B6C8F6C754FBD4D6EA70E50456F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E30EB118F4EFA58542505FADD9221BB;
+			remoteInfo = AmpCore;
+		};
+		C69886670360A6FE9196A5F4AFA515BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481B172C89E831166E2DFD4B1EEA310C;
+			remoteInfo = AmpIMA;
+		};
+		C75EEC8B4E5E19C30F8D2F367375F3B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E30EB118F4EFA58542505FADD9221BB;
+			remoteInfo = AmpCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A8D9446ABF724A14AD19585FC3B2F3D /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D42FBDA716081AA979E20D9664C13C3 /* Pods-tvos-akamai-IMA-collector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tvos-akamai-IMA-collector-umbrella.h"; sourceTree = "<group>"; };
+		1FCFC1C0F7401CE5F8281789DE2ECD1F /* Pods-tvos-akamai-IMA-collector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvos-akamai-IMA-collector-Info.plist"; sourceTree = "<group>"; };
+		25C6AC94DD6F8761F8B07959565D1CFE /* Pods-tvos-akamai-IMA-collector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvos-akamai-IMA-collector.release.xcconfig"; sourceTree = "<group>"; };
+		2EC3F72D171A9107FE34A0A8BBA389E2 /* AmpCore-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AmpCore-xcframeworks.sh"; sourceTree = "<group>"; };
+		3F1625784D4A22CE0674B0EF83B10F89 /* AmpIMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpIMA.release.xcconfig; sourceTree = "<group>"; };
+		3FE62F1B3CA983152875E2E7E72A3F86 /* DZAkamaiTvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZAkamaiTvOS.release.xcconfig; sourceTree = "<group>"; };
+		41408C8B87C8C000C46C7BC2EF4AA05B /* Pods_tvos_akamai_IMA_collector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_tvos_akamai_IMA_collector.framework; path = "Pods-tvos-akamai-IMA-collector.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51702F6ED51B910A98E3EB98684A2D26 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.modulemap"; sourceTree = "<group>"; };
+		563C906C03CC085B461F161C3991DDBF /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvos-akamai-IMA-collector.debug.xcconfig"; sourceTree = "<group>"; };
+		58A07BF2159575D9538CC25703819419 /* GoogleAds-IMA-tvOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-tvOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		5A7B0C27A93ADDD0B557D1BBB3607FE9 /* DzTvOSBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DzTvOSBase.framework; sourceTree = "<group>"; };
+		5C812F44882C9D494A9CF0D0552F2E01 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
+		5D4C1E92B6FB32EC920CB252C4C7862D /* DZAkamaiTvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZAkamaiTvOS.debug.xcconfig; sourceTree = "<group>"; };
+		65F3C8E198F8DF4E7809608CD99B5974 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-Info.plist"; sourceTree = "<group>"; };
+		69A1B2D3C85C81F5B15628085BCEE387 /* AmpCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpCore.debug.xcconfig; sourceTree = "<group>"; };
+		6B9BE6866AD2BE279655990395016CCB /* DZTvOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZTvOSBase.release.xcconfig; sourceTree = "<group>"; };
+		6BF8DB017F95A4FA41CA88FF02CBDD14 /* AmpCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpCore.release.xcconfig; sourceTree = "<group>"; };
+		6EB2CD72CA1F9CD300B840FD100BFA42 /* DZAkamaiTVOSCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DZAkamaiTVOSCollector.framework; sourceTree = "<group>"; };
+		70C2D43E8365062FA0B95AC352CA0E0D /* Pods-tvos-akamai-IMA-collector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tvos-akamai-IMA-collector-dummy.m"; sourceTree = "<group>"; };
+		7DB5C7E1B13E99899126844F6962E616 /* Pods-tvos-akamai-IMA-collector-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvos-akamai-IMA-collector-acknowledgements.plist"; sourceTree = "<group>"; };
+		820579D8B04793E16CAA7C5BFEE0B150 /* AmpIMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpIMA.debug.xcconfig; sourceTree = "<group>"; };
+		83BC580E407C05E711F1BE20E762171B /* Pods-tvos-akamai-IMA-collector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-tvos-akamai-IMA-collector.modulemap"; sourceTree = "<group>"; };
+		972BF5C12B1A92749CFC5FAC3947BA94 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		996EE151416FA0F875AD91910EC1CC20 /* Pods-tvos-akamai-IMA-collector-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tvos-akamai-IMA-collector-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8DE975A5F892BCB69F44C64E5D3FAFC /* DZTvOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZTvOSBase.debug.xcconfig; sourceTree = "<group>"; };
+		AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B1B1D4E25312D8336FE86B114C0F3702 /* DZTvOSBase-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DZTvOSBase-copy-dsyms.sh"; sourceTree = "<group>"; };
+		B7EB08C7F6FE3CDE82F05E4576B9FF44 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks.sh"; sourceTree = "<group>"; };
+		B9B4892ABE85474557B3641B8E633E59 /* AmpIMA.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AmpIMA.xcframework; sourceTree = "<group>"; };
+		C4F64EAC9150E4EF575A9043BA0A2EEA /* GoogleAds-IMA-tvOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-tvOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CB12333F112C3BC44074F2B683E0ABFF /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D339153F7294747B364C467187BB57DC /* AmpIMA-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AmpIMA-xcframeworks.sh"; sourceTree = "<group>"; };
+		DB7C6F50345A79A8146FDBCCE92F6D55 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6FAA15C6BA1543FD44C413AB60BFD2B /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m"; sourceTree = "<group>"; };
+		ED09DCA0E7E529A241B573F595F0F5D2 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h"; sourceTree = "<group>"; };
+		F834210BD098B15CD9443E026FB4962B /* DZAkamaiTvOS-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DZAkamaiTvOS-copy-dsyms.sh"; sourceTree = "<group>"; };
+		FC4765756F5B80592910E2EAD537C310 /* AmpCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AmpCore.xcframework; sourceTree = "<group>"; };
+		FF9A3EC752CA00B5838BA5A43579A1FA /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E166BC8E69D3713071DD98D8E0D506C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD6A0C66CC7F55D94823F5BE4181A7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B941D166987176EEF3EC2997B4706B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E512B8D646D4D2A5EBBCF09A93E5191 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077E64E4B204EADE1583ED3F362FE8EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4765756F5B80592910E2EAD537C310 /* AmpCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1923F679E77BCDFB786B771EFF79A364 /* GoogleAds-IMA-tvOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1B3CA0FB39E661E3B3C7E31BBCF2187D /* Frameworks */,
+				AFBA331530F751169529D0B345A7CF21 /* Support Files */,
+			);
+			name = "GoogleAds-IMA-tvOS-SDK";
+			path = "GoogleAds-IMA-tvOS-SDK";
+			sourceTree = "<group>";
+		};
+		1A1365212A23F8F4E0C538A9E8D39708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41408C8B87C8C000C46C7BC2EF4AA05B /* Pods_tvos_akamai_IMA_collector.framework */,
+				0A8D9446ABF724A14AD19585FC3B2F3D /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B3CA0FB39E661E3B3C7E31BBCF2187D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C812F44882C9D494A9CF0D0552F2E01 /* GoogleInteractiveMediaAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D88E1B7856614CC36F1C27CEF2C70BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D339153F7294747B364C467187BB57DC /* AmpIMA-xcframeworks.sh */,
+				820579D8B04793E16CAA7C5BFEE0B150 /* AmpIMA.debug.xcconfig */,
+				3F1625784D4A22CE0674B0EF83B10F89 /* AmpIMA.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AmpIMA";
+			sourceTree = "<group>";
+		};
+		1F9FCB3618DC551B524D67B669081319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCADEF5968BA4BD0936606315FB57A49 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C9EE14309579A8F2B2EBBF13F3E5627 /* DZAkamaiTvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF4B566D213EFFCDE4AEBFE5E6E93520 /* Frameworks */,
+				F003E507E345F8F428A0167150E298C5 /* Support Files */,
+			);
+			name = DZAkamaiTvOS;
+			path = DZAkamaiTvOS;
+			sourceTree = "<group>";
+		};
+		9706B9E1D7700606483A0F3B984C9121 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC3F72D171A9107FE34A0A8BBA389E2 /* AmpCore-xcframeworks.sh */,
+				69A1B2D3C85C81F5B15628085BCEE387 /* AmpCore.debug.xcconfig */,
+				6BF8DB017F95A4FA41CA88FF02CBDD14 /* AmpCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AmpCore";
+			sourceTree = "<group>";
+		};
+		97FE0CDFB16AEEBCF20184F9B9FFF2B1 /* DZTvOSBase */ = {
+			isa = PBXGroup;
+			children = (
+				C6805F79546204D68AA488A625495344 /* Frameworks */,
+				D6ABD17920333C5C645D9082B4A421B1 /* Support Files */,
+			);
+			name = DZTvOSBase;
+			path = DZTvOSBase;
+			sourceTree = "<group>";
+		};
+		984369DB5E70525BA0E2EC8A0777C44E /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				51702F6ED51B910A98E3EB98684A2D26 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.modulemap */,
+				972BF5C12B1A92749CFC5FAC3947BA94 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.markdown */,
+				CB12333F112C3BC44074F2B683E0ABFF /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-acknowledgements.plist */,
+				E6FAA15C6BA1543FD44C413AB60BFD2B /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m */,
+				B7EB08C7F6FE3CDE82F05E4576B9FF44 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks.sh */,
+				65F3C8E198F8DF4E7809608CD99B5974 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-Info.plist */,
+				ED09DCA0E7E529A241B573F595F0F5D2 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h */,
+				DB7C6F50345A79A8146FDBCCE92F6D55 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */,
+				FF9A3EC752CA00B5838BA5A43579A1FA /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */,
+			);
+			name = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests";
+			path = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests";
+			sourceTree = "<group>";
+		};
+		A7D396F19C33B3D9E5A0CCE8742A62DC /* Pods-tvos-akamai-IMA-collector */ = {
+			isa = PBXGroup;
+			children = (
+				83BC580E407C05E711F1BE20E762171B /* Pods-tvos-akamai-IMA-collector.modulemap */,
+				996EE151416FA0F875AD91910EC1CC20 /* Pods-tvos-akamai-IMA-collector-acknowledgements.markdown */,
+				7DB5C7E1B13E99899126844F6962E616 /* Pods-tvos-akamai-IMA-collector-acknowledgements.plist */,
+				70C2D43E8365062FA0B95AC352CA0E0D /* Pods-tvos-akamai-IMA-collector-dummy.m */,
+				1FCFC1C0F7401CE5F8281789DE2ECD1F /* Pods-tvos-akamai-IMA-collector-Info.plist */,
+				0D42FBDA716081AA979E20D9664C13C3 /* Pods-tvos-akamai-IMA-collector-umbrella.h */,
+				563C906C03CC085B461F161C3991DDBF /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */,
+				25C6AC94DD6F8761F8B07959565D1CFE /* Pods-tvos-akamai-IMA-collector.release.xcconfig */,
+			);
+			name = "Pods-tvos-akamai-IMA-collector";
+			path = "Target Support Files/Pods-tvos-akamai-IMA-collector";
+			sourceTree = "<group>";
+		};
+		AF4B566D213EFFCDE4AEBFE5E6E93520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2CD72CA1F9CD300B840FD100BFA42 /* DZAkamaiTVOSCollector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFBA331530F751169529D0B345A7CF21 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4F64EAC9150E4EF575A9043BA0A2EEA /* GoogleAds-IMA-tvOS-SDK.debug.xcconfig */,
+				58A07BF2159575D9538CC25703819419 /* GoogleAds-IMA-tvOS-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleAds-IMA-tvOS-SDK";
+			sourceTree = "<group>";
+		};
+		B326A936295304535D049EA98F60A375 /* AmpCore */ = {
+			isa = PBXGroup;
+			children = (
+				077E64E4B204EADE1583ED3F362FE8EB /* Frameworks */,
+				9706B9E1D7700606483A0F3B984C9121 /* Support Files */,
+			);
+			name = AmpCore;
+			path = AmpCore;
+			sourceTree = "<group>";
+		};
+		BDB68AE9C74FEF205931A843CB97438C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7D396F19C33B3D9E5A0CCE8742A62DC /* Pods-tvos-akamai-IMA-collector */,
+				984369DB5E70525BA0E2EC8A0777C44E /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C6805F79546204D68AA488A625495344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A7B0C27A93ADDD0B557D1BBB3607FE9 /* DzTvOSBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1AC827DF348A3293628B0DFB6F98A0 /* AmpIMA */ = {
+			isa = PBXGroup;
+			children = (
+				FFE02A5B3679B401DEC11C7B0479CB61 /* Frameworks */,
+				1D88E1B7856614CC36F1C27CEF2C70BE /* Support Files */,
+			);
+			name = AmpIMA;
+			path = AmpIMA;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1F9FCB3618DC551B524D67B669081319 /* Frameworks */,
+				EAF5D7724BB4CA2CE56D164631872A47 /* Pods */,
+				1A1365212A23F8F4E0C538A9E8D39708 /* Products */,
+				BDB68AE9C74FEF205931A843CB97438C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6ABD17920333C5C645D9082B4A421B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B1D4E25312D8336FE86B114C0F3702 /* DZTvOSBase-copy-dsyms.sh */,
+				A8DE975A5F892BCB69F44C64E5D3FAFC /* DZTvOSBase.debug.xcconfig */,
+				6B9BE6866AD2BE279655990395016CCB /* DZTvOSBase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZTvOSBase";
+			sourceTree = "<group>";
+		};
+		DCADEF5968BA4BD0936606315FB57A49 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		EAF5D7724BB4CA2CE56D164631872A47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B326A936295304535D049EA98F60A375 /* AmpCore */,
+				CD1AC827DF348A3293628B0DFB6F98A0 /* AmpIMA */,
+				5C9EE14309579A8F2B2EBBF13F3E5627 /* DZAkamaiTvOS */,
+				97FE0CDFB16AEEBCF20184F9B9FFF2B1 /* DZTvOSBase */,
+				1923F679E77BCDFB786B771EFF79A364 /* GoogleAds-IMA-tvOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F003E507E345F8F428A0167150E298C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F834210BD098B15CD9443E026FB4962B /* DZAkamaiTvOS-copy-dsyms.sh */,
+				5D4C1E92B6FB32EC920CB252C4C7862D /* DZAkamaiTvOS.debug.xcconfig */,
+				3FE62F1B3CA983152875E2E7E72A3F86 /* DZAkamaiTvOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZAkamaiTvOS";
+			sourceTree = "<group>";
+		};
+		FFE02A5B3679B401DEC11C7B0479CB61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4892ABE85474557B3641B8E633E59 /* AmpIMA.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF74A25893B9F230D575C3B5436884CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE5076D3D80347CEF5FC5A0E91A7264 /* Pods-tvos-akamai-IMA-collector-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9BA3482B3748BB54234743F23F570F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D36F18AAB8C2C9F1E2CC7320FD52AD /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5BEA69534384CA3748C10CECCDBE7F76 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9BAD54D73A6FFC1B02680DC9FAB4FB /* Build configuration list for PBXNativeTarget "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests" */;
+			buildPhases = (
+				D9BA3482B3748BB54234743F23F570F4 /* Headers */,
+				4112988A8CA8E2247663F57E061243C7 /* Sources */,
+				6E166BC8E69D3713071DD98D8E0D506C /* Frameworks */,
+				F112D7DD63E1900ECF596CA6EF73AED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABF83377DA97C0BAE4ECF7A55EC2300 /* PBXTargetDependency */,
+				0913EFFEA5CA17F495EAE6161FE8C203 /* PBXTargetDependency */,
+				E5C50442884B59D6D857CD7B5980F78D /* PBXTargetDependency */,
+				ACE035B2BCE0AC861CEF74D6BC800584 /* PBXTargetDependency */,
+				D27C765601AD13D8B3E32BC57FAE1E9B /* PBXTargetDependency */,
+			);
+			name = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests";
+			productName = "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests";
+			productReference = 0A8D9446ABF724A14AD19585FC3B2F3D /* Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E62B77E973D1063AF6B5C26B707405DA /* Pods-tvos-akamai-IMA-collector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CA6855542553FFF1ACDB73B2E10C59 /* Build configuration list for PBXNativeTarget "Pods-tvos-akamai-IMA-collector" */;
+			buildPhases = (
+				CF74A25893B9F230D575C3B5436884CB /* Headers */,
+				87ECEB6BC484FB8FC1F7C5487FCB6B9C /* Sources */,
+				8B941D166987176EEF3EC2997B4706B0 /* Frameworks */,
+				35ABC1AAA882C69BEFE4141F79A13DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05279FFDAEE47C1839B1EB1748F5181D /* PBXTargetDependency */,
+				0C2840337FA056D983CB6D408C6DF93C /* PBXTargetDependency */,
+				025927AFD15F41173D2852C77FE3904C /* PBXTargetDependency */,
+				886500CBC6C81D187AE86A8AB78779D6 /* PBXTargetDependency */,
+				28E4405FE1A2539F28C9CC34F68F394B /* PBXTargetDependency */,
+			);
+			name = "Pods-tvos-akamai-IMA-collector";
+			productName = "Pods-tvos-akamai-IMA-collector";
+			productReference = 41408C8B87C8C000C46C7BC2EF4AA05B /* Pods_tvos_akamai_IMA_collector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A1365212A23F8F4E0C538A9E8D39708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E30EB118F4EFA58542505FADD9221BB /* AmpCore */,
+				481B172C89E831166E2DFD4B1EEA310C /* AmpIMA */,
+				F107BE375DE32C7BB83DBD64B0BDDF01 /* DZAkamaiTvOS */,
+				08782C8850BBA53EE9F18980EAA31A39 /* DZTvOSBase */,
+				8D8DD638EFFF8DBE3599EC57E5CC1036 /* GoogleAds-IMA-tvOS-SDK */,
+				E62B77E973D1063AF6B5C26B707405DA /* Pods-tvos-akamai-IMA-collector */,
+				5BEA69534384CA3748C10CECCDBE7F76 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35ABC1AAA882C69BEFE4141F79A13DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F112D7DD63E1900ECF596CA6EF73AED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		444943F7A41EB4F2F678E83AB904D24B /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AmpCore/AmpCore-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AmpCore/AmpCore-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AmpCore/AmpCore-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA6DB12B52B820AC75B30EB8CFD7049 /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DZAkamaiTvOS/DZAkamaiTvOS-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DZAkamaiTvOS/DZAkamaiTvOS-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/DZAkamaiTvOS/DZAkamaiTvOS-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E465513FC8F07DE0193E2513C3DDB1 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AmpIMA/AmpIMA-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AmpIMA/AmpIMA-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AmpIMA/AmpIMA-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A351C35916D1BAD8DAA5CB8155C4E3C /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DZTvOSBase/DZTvOSBase-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DZTvOSBase/DZTvOSBase-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/DZTvOSBase/DZTvOSBase-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4112988A8CA8E2247663F57E061243C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C08162F9D547844DBF01F65C66140D6 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87ECEB6BC484FB8FC1F7C5487FCB6B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9C0BD7235182D89D29C2F1A312FE3E /* Pods-tvos-akamai-IMA-collector-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025927AFD15F41173D2852C77FE3904C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZAkamaiTvOS;
+			target = F107BE375DE32C7BB83DBD64B0BDDF01 /* DZAkamaiTvOS */;
+			targetProxy = 74040C0B7F23B758C8914C094D776164 /* PBXContainerItemProxy */;
+		};
+		05279FFDAEE47C1839B1EB1748F5181D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmpCore;
+			target = 8E30EB118F4EFA58542505FADD9221BB /* AmpCore */;
+			targetProxy = A8C69B6C8F6C754FBD4D6EA70E50456F /* PBXContainerItemProxy */;
+		};
+		0913EFFEA5CA17F495EAE6161FE8C203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmpIMA;
+			target = 481B172C89E831166E2DFD4B1EEA310C /* AmpIMA */;
+			targetProxy = C69886670360A6FE9196A5F4AFA515BE /* PBXContainerItemProxy */;
+		};
+		0ABF83377DA97C0BAE4ECF7A55EC2300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmpCore;
+			target = 8E30EB118F4EFA58542505FADD9221BB /* AmpCore */;
+			targetProxy = 7D73374579C998FA2692040F7C341DA0 /* PBXContainerItemProxy */;
+		};
+		0C2840337FA056D983CB6D408C6DF93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmpIMA;
+			target = 481B172C89E831166E2DFD4B1EEA310C /* AmpIMA */;
+			targetProxy = 746C027A74485DB54227BBE44F28F344 /* PBXContainerItemProxy */;
+		};
+		28E4405FE1A2539F28C9CC34F68F394B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-tvOS-SDK";
+			target = 8D8DD638EFFF8DBE3599EC57E5CC1036 /* GoogleAds-IMA-tvOS-SDK */;
+			targetProxy = 6FF7CD876AFE168202BCA9FDB9AFC934 /* PBXContainerItemProxy */;
+		};
+		8214E98F410FC350FAF425116AC5D1FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZTvOSBase;
+			target = 08782C8850BBA53EE9F18980EAA31A39 /* DZTvOSBase */;
+			targetProxy = 208D0FB987D30668F8CE6F69FA1F09AD /* PBXContainerItemProxy */;
+		};
+		886500CBC6C81D187AE86A8AB78779D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZTvOSBase;
+			target = 08782C8850BBA53EE9F18980EAA31A39 /* DZTvOSBase */;
+			targetProxy = 8C99DE72A1B445F02C25E0DEA8A58766 /* PBXContainerItemProxy */;
+		};
+		ACE035B2BCE0AC861CEF74D6BC800584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZTvOSBase;
+			target = 08782C8850BBA53EE9F18980EAA31A39 /* DZTvOSBase */;
+			targetProxy = 6E906A85463CC0FB34AA255DCCD96684 /* PBXContainerItemProxy */;
+		};
+		D27C765601AD13D8B3E32BC57FAE1E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-tvOS-SDK";
+			target = 8D8DD638EFFF8DBE3599EC57E5CC1036 /* GoogleAds-IMA-tvOS-SDK */;
+			targetProxy = 0F3BDD15D72C0DA144DDD670C5C2534F /* PBXContainerItemProxy */;
+		};
+		E5C50442884B59D6D857CD7B5980F78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZAkamaiTvOS;
+			target = F107BE375DE32C7BB83DBD64B0BDDF01 /* DZAkamaiTvOS */;
+			targetProxy = 0A176B786305CE6FCA489CF7C918D5E7 /* PBXContainerItemProxy */;
+		};
+		FF58CACF172B685F1C21947819E8E29F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmpCore;
+			target = 8E30EB118F4EFA58542505FADD9221BB /* AmpCore */;
+			targetProxy = C75EEC8B4E5E19C30F8D2F367375F3B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C7B010C6125EB8FD24F02B21783B035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820579D8B04793E16CAA7C5BFEE0B150 /* AmpIMA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		4BC0846AEDAE7973E1DA6D1B48DC301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A07BF2159575D9538CC25703819419 /* GoogleAds-IMA-tvOS-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EE266273B1D79D118D29617F0E29131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 563C906C03CC085B461F161C3991DDBF /* Pods-tvos-akamai-IMA-collector.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D635D7C4367F049785A5E768B8C24EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Release;
+		};
+		84F93B5DAB4D162B81DBDA440E199C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7C6F50345A79A8146FDBCCE92F6D55 /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88724C638B99677CE666F298FBC02A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9A3EC752CA00B5838BA5A43579A1FA /* Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		943C4A0B2E803FE158D9497E67186737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F64EAC9150E4EF575A9043BA0A2EEA /* GoogleAds-IMA-tvOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		AC24828727F580F00B8864AC691065BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C6AC94DD6F8761F8B07959565D1CFE /* Pods-tvos-akamai-IMA-collector.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tvos-akamai-IMA-collector/Pods-tvos-akamai-IMA-collector.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD43E7C3E8228369964347CEA2353894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A1B2D3C85C81F5B15628085BCEE387 /* AmpCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		B3DD34391802DBCEF46323DAD531EFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BF8DB017F95A4FA41CA88FF02CBDD14 /* AmpCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3CB840C0C895A0DFAB2D12B996E2136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Debug;
+		};
+		E5144658B9B012E56DB794017C7B6DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1625784D4A22CE0674B0EF83B10F89 /* AmpIMA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE511F69DEB4C526164CDBF51C903A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4C1E92B6FB32EC920CB252C4C7862D /* DZAkamaiTvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		F8244D3BE50EF70CBF445F54EAD1025A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE62F1B3CA983152875E2E7E72A3F86 /* DZAkamaiTvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA715F801FB0CAAB28D4CDC6A1355645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DE975A5F892BCB69F44C64E5D3FAFC /* DZTvOSBase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FB92470A7087C0408DE18F9CDB292921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9BE6866AD2BE279655990395016CCB /* DZTvOSBase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3CB840C0C895A0DFAB2D12B996E2136 /* Debug */,
+				7D635D7C4367F049785A5E768B8C24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E7AA4045E975070AE1BC31E495CDC6 /* Build configuration list for PBXAggregateTarget "AmpIMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7B010C6125EB8FD24F02B21783B035 /* Debug */,
+				E5144658B9B012E56DB794017C7B6DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C54B6084BBE7EFD0FBE5399DDBF0745 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-tvOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943C4A0B2E803FE158D9497E67186737 /* Debug */,
+				4BC0846AEDAE7973E1DA6D1B48DC301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31B4D54A5AD64C80C888A7FAF6F6BE8 /* Build configuration list for PBXAggregateTarget "DZTvOSBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA715F801FB0CAAB28D4CDC6A1355645 /* Debug */,
+				FB92470A7087C0408DE18F9CDB292921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9BAD54D73A6FFC1B02680DC9FAB4FB /* Build configuration list for PBXNativeTarget "Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F93B5DAB4D162B81DBDA440E199C55 /* Debug */,
+				88724C638B99677CE666F298FBC02A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326F86AB0F815ECC7C0A0CA5518F0A1 /* Build configuration list for PBXAggregateTarget "DZAkamaiTvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE511F69DEB4C526164CDBF51C903A55 /* Debug */,
+				F8244D3BE50EF70CBF445F54EAD1025A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CA6855542553FFF1ACDB73B2E10C59 /* Build configuration list for PBXNativeTarget "Pods-tvos-akamai-IMA-collector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE266273B1D79D118D29617F0E29131 /* Debug */,
+				AC24828727F580F00B8864AC691065BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB89D6F97F04651626073C5901969935 /* Build configuration list for PBXAggregateTarget "AmpCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD43E7C3E8228369964347CEA2353894 /* Debug */,
+				B3DD34391802DBCEF46323DAD531EFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

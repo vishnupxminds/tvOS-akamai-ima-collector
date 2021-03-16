@@ -1,0 +1,1675 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AmpCore
+import AVFoundation
+import AVKit
+@_exported import AmpCore
+import Foundation
+import MediaPlayer
+import ObjectiveC
+import QuartzCore
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@objc @_inheritsConvenienceInitializers open class AmpAirplay2Button : AmpCore.AmpButton {
+  @objc override dynamic public var tintColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  public var activeTintColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc deinit
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+@_hasMissingDesignatedInitializers public class UIUtils {
+  public static func formatSeconds(_ seconds: Swift.Double) -> Swift.String?
+  public static func secondsToHoursMinutesSeconds(_ seconds: Swift.Int) -> (Swift.Int, Swift.Int, Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable open class BasicUI : AmpCore.AmpUIView {
+  @objc @IBInspectable open var closeButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenCloseButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenAirplayButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var rewindButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenRewindButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var forwardButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenForwardButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var playButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var pauseButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenPlayButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var pictureInPictureButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenPictureInPictureButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var muteButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var unMuteButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenMuteButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var settingsButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenSettingsButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var fullscreenButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var fullscreenButtonCollapseImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isHiddenFullscreenButton: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var titleText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var subTitleText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isTitle: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isSubtitle: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var bufferColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var maximumTrackTintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var progressTintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AmpCloseButton : AmpCore.AmpButton {
+  public var image: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+open class BaseFullscreenHandler : AmpCore.FullscreenHandler {
+  public func clear()
+  public var fullscreenManager: AmpCore.FullscreenManager!
+  public var ampPlayer: AmpCore.AmpPlayer?
+  public init()
+  open func handleRotation()
+  open func enterFullscreen()
+  open func exitFullscreen()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class OTTDevice : ObjectiveC.NSObject {
+  public var status: Swift.String
+  public var name: Swift.String
+  public var device: Swift.String
+  public var deviceName: Swift.String
+  public var deviceID: Swift.String
+  public var deviceManufacturer: Swift.String
+  public var deviceModel: Swift.String
+  public var deviceVersion: Swift.String
+  public var type: Swift.String
+  @objc override dynamic public init()
+  convenience public init(status: Swift.String, name: Swift.String, device: Swift.String, deviceName: Swift.String, deviceID: Swift.String, deviceManufacturer: Swift.String, deviceModel: Swift.String, deviceVersion: Swift.String, type: Swift.String)
+  @objc deinit
+}
+@objc public class PlayerEventLogger : ObjectiveC.NSObject, AmpCore.PlayerEventObserver {
+  public init(ampPlayer: AmpCore.AmpPlayer)
+  public func stop()
+  @objc public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onHandledResignActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onHandledDidBecomeActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func willHandleUrl(_ ampPlayer: AmpCore.AmpPlayer)
+  public func enabledLogs(ampPlayer: AmpCore.AmpPlayer)
+  public func disabledLogs(ampPlayer: AmpCore.AmpPlayer)
+  public func onAmpError(_ ampPlayer: AmpCore.AmpPlayer, error: AmpCore.PlayerError)
+  @objc public func onPlaybackStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onCuepointReached(_ ampPlayer: AmpCore.AmpPlayer, atTime: Swift.Double)
+  @objc public func onPlaybackStalled(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  public func onAmpReplay(ampPlayer: AmpCore.AmpPlayer)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class AmpFullScreenButton : AmpCore.AmpButton {
+  open var expandImage: UIKit.UIImage? {
+    get
+    set
+  }
+  open var collapseImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onEnterFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onExitFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class AmpCurrentTimeLabel : UIKit.UILabel, AmpCore.AmpUIComponent {
+  public var container: AmpCore.PlayerUIView?
+  public var player: AmpCore.AmpPlayer? {
+    get
+    set(value)
+  }
+  public var observerId: Swift.Int?
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension AmpCurrentTimeLabel : AmpCore.PlayerEventObserver {
+  @objc dynamic public func onPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onSeekEnd(_ time: Foundation.TimeInterval)
+  @objc dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+}
+@objc @_hasMissingDesignatedInitializers open class CuepointManager : ObjectiveC.NSObject, AmpCore.PlayerEventObserver {
+  public init(ampPlayer: AmpCore.AmpPlayer, observer: AmpCore.PlayerEventObserver, times: [Swift.Double])
+  @objc public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc open func onPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class AmpRewindButton : AmpCore.AmpButton {
+  public var image: UIKit.UIImage? {
+    get
+    set
+  }
+  public var forwardTime: Swift.Double
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol FullscreenManager {
+  var ampPlayer: AmpCore.AmpPlayer? { get set }
+  var isFullscreen: Swift.Bool { get set }
+  var videoView: UIKit.UIView? { get set }
+  var mode: Swift.String { get set }
+  func toggle()
+  func setFullscreenHandler(handler: AmpCore.FullscreenHandler?)
+  func enterFullscreen()
+  func exitFullscreen()
+  func handleRotation()
+}
+public protocol FullscreenHandler {
+  var ampPlayer: AmpCore.AmpPlayer? { get set }
+  var fullscreenManager: AmpCore.FullscreenManager! { get set }
+  func enterFullscreen()
+  func exitFullscreen()
+  func handleRotation()
+  func clear()
+}
+@_inheritsConvenienceInitializers open class ParentViewFullscreen : AmpCore.BaseFullscreenHandler {
+  override open func enterFullscreen()
+  override open func exitFullscreen()
+  @objc deinit
+  override public init()
+}
+@objc open class AmpButton : UIKit.UIButton, AmpCore.AmpUIComponent {
+  public var container: AmpCore.PlayerUIView?
+  weak open var delegate: AmpCore.AmpUIEventDelegate?
+  public var player: AmpCore.AmpPlayer? {
+    get
+    set(value)
+  }
+  public var observerId: Swift.Int?
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  open var selectedImage: UIKit.UIImage? {
+    get
+    set(value)
+  }
+  open var defaultImage: UIKit.UIImage? {
+    get
+    set(value)
+  }
+  @objc open func handleTouch(_ sender: Swift.AnyObject)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension AmpButton : AmpCore.PlayerEventObserver {
+  @objc dynamic public func streamReadyToPlay(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+}
+@objc public enum BufferingState : Swift.Int, Swift.CustomStringConvertible {
+  case unknown = 0
+  case ready
+  case delayed
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol ExternalPlaybackDelegate {
+  func externalPlaybackState() -> AmpCore.PlaybackState
+  func play()
+  func pause()
+  func currentTime() -> Swift.Double
+  func seekTo(_ seconds: Foundation.TimeInterval)
+}
+@objc public enum AmpUIAction : Swift.Int {
+  case close
+  case share
+  case play
+  case pause
+  case captions
+  case forward
+  case rewind
+  case pictureinpicture
+  case mute
+  case unmute
+  case airplay
+  case fullscreen
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol AmpUIEventDelegate {
+  @objc func onActionPerformed(action: AmpCore.AmpUIAction, player: AmpCore.AmpPlayer?)
+}
+@objc public class AdBreakInfo : ObjectiveC.NSObject {
+  public var totalAds: Swift.Int
+  public var duration: Swift.Double
+  public var breakIndex: Swift.Int
+  @objc public init(totalAds: Swift.Int, duration: Swift.Double, breakIndex: Swift.Int)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class PlayerUIView : UIKit.UIView {
+  open var autoHideTime: Swift.Double
+  public var viewAlpha: CoreGraphics.CGFloat
+  public var isAnimating: Swift.Bool
+  weak open var player: AmpCore.AmpPlayer? {
+    get
+    set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func didMoveToSuperview()
+  open func show()
+  open func setAutoHide(_ delay: Swift.Double)
+  @objc open func hide()
+  @objc deinit
+}
+extension PlayerUIView : AmpCore.PlayerEventObserver {
+  @objc dynamic open func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic open func onTap(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onSeekBegan()
+  @objc dynamic public func onSeekEnd(_ time: Foundation.TimeInterval)
+}
+@objc @_inheritsConvenienceInitializers open class FairplayConfiguration : ObjectiveC.NSObject {
+  public var certificateUrl: Swift.String?
+  public var serverUrl: Swift.String?
+  public var customHeaders: [Swift.String : Swift.String]?
+  public var spcHandler: AmpCore.SPCHandler?
+  public var certificateHandler: AmpCore.CertificateHandler?
+  @objc override dynamic public init()
+  convenience public init(provider: AmpCore.FairplayProvider, serverURL: Swift.String? = nil, certificateUrl: Swift.String? = nil, customHeaders: [Swift.String : Swift.String]? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StreamDRMHandler : AmpCore.StreamHandler {
+  public var serverURL: Swift.String?
+  public var certificateURL: Swift.String?
+  public var jsonResponse: Swift.Bool?
+  public var customHeaders: [Swift.String : Swift.String]?
+  public var spcHandler: AmpCore.SPCHandler?
+  public var certificateHandler: AmpCore.CertificateHandler?
+  @objc public func getStreamType() -> AmpCore.StreamType
+  public func cancelStreaming()
+  @objc public func canHandleUrl(url: Swift.String) -> Swift.Bool
+  @objc public func handleUrl(url: Swift.String, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc deinit
+}
+open class QualityLevel {
+  open var width: Swift.Int?
+  open var height: Swift.Int?
+  open var bitrate: Swift.Int?
+  public init(width: Swift.Int, height: Swift.Int, bitrate: Swift.Int)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AmpAirplayButton : AmpCore.AmpButton {
+  public var airplayImage: UIKit.UIImage? {
+    get
+    set
+  }
+  public var airplaySelectedImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  public func onExternalPlaybackStart()
+  public func onExternalPlaybackEnd()
+  @objc deinit
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+@objc open class AmpSlider : UIKit.UISlider, AmpCore.AmpUIComponent {
+  public var container: AmpCore.PlayerUIView?
+  public var observerId: Swift.Int?
+  public var player: AmpCore.AmpPlayer? {
+    get
+    set(value)
+  }
+  @objc override dynamic open var maximumTrackTintColor: UIKit.UIColor? {
+    @objc get
+    @objc set(value)
+  }
+  public var progressTintColor: UIKit.UIColor? {
+    get
+    set(value)
+  }
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public func setupSlider()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+extension AmpSlider : AmpCore.PlayerEventObserver {
+  @objc dynamic public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func streamReadyToPlay(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+}
+@objc public enum StreamType : Swift.Int, Swift.CustomStringConvertible {
+  case http = 0
+  case unknown
+  case octoshape
+  case config
+  case local
+  case drm
+  case audio
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol RNCryptorType {
+  init(password: Swift.String)
+  func update(withData data: Foundation.Data) throws -> Foundation.Data
+  func finalData() throws -> Foundation.Data
+}
+public enum RNCryptor {
+  public enum Error : Swift.Int, Swift.Error {
+    case hmacMismatch
+    case unknownHeader
+    case messageTooShort
+    case memoryFailure
+    case invalidCredentialType
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static func encrypt(data: Foundation.Data, withPassword password: Swift.String) -> Foundation.Data
+  public static func decrypt(data: Foundation.Data, withPassword password: Swift.String) throws -> Foundation.Data
+  public static func randomData(ofLength length: Swift.Int) -> Foundation.Data
+  final public class Encryptor : AmpCore.RNCryptorType {
+    public init(password: Swift.String)
+    final public func update(withData data: Foundation.Data) -> Foundation.Data
+    final public func finalData() -> Foundation.Data
+    final public func encrypt(data: Foundation.Data) -> Foundation.Data
+    @objc deinit
+  }
+  final public class Decryptor : AmpCore.RNCryptorType {
+    public init(password: Swift.String)
+    final public func decrypt(data: Foundation.Data) throws -> Foundation.Data
+    final public func update(withData data: Foundation.Data) throws -> Foundation.Data
+    final public func finalData() throws -> Foundation.Data
+    @objc deinit
+  }
+}
+extension RNCryptor {
+  @_hasMissingDesignatedInitializers final public class FormatV3 {
+    public static let keySize: Swift.Int
+    public static let saltSize: Swift.Int
+    public static func makeKey(forPassword password: Swift.String, withSalt salt: Foundation.Data) -> Foundation.Data
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers final public class EncryptorV3 : AmpCore.RNCryptorType {
+    convenience public init(password: Swift.String)
+    convenience public init(encryptionKey: Foundation.Data, hmacKey: Foundation.Data)
+    final public func encrypt(data: Foundation.Data) -> Foundation.Data
+    final public func update(withData data: Foundation.Data) -> Foundation.Data
+    final public func finalData() -> Foundation.Data
+    @objc deinit
+  }
+  final public class DecryptorV3 {
+    public init(password: Swift.String)
+    public init(encryptionKey: Foundation.Data, hmacKey: Foundation.Data)
+    final public func decrypt(data: Foundation.Data) throws -> Foundation.Data
+    final public func update(withData data: Foundation.Data) throws -> Foundation.Data
+    final public func finalData() throws -> Foundation.Data
+    @objc deinit
+  }
+}
+@objc @_inheritsConvenienceInitializers open class AmpPlayerView : UIKit.UIView {
+  @objc override dynamic open class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  open func clean()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class SettingsViewController : UIKit.UIViewController {
+  open var audioTracks: [Swift.String]?
+  open var captionTracks: [Swift.String]?
+  open var captionTrackSectionTitle: Swift.String
+  open var audioTrackSectionTitle: Swift.String
+  weak open var player: AmpCore.AmpPlayer? {
+    get
+    set
+  }
+  @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic open func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension SettingsViewController : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc public enum PosterImageType : Swift.Int {
+  case poster = 0
+  case streamAutoRecovery = 1
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class Caption : ObjectiveC.NSObject {
+  open var url: Swift.String
+  open var language: Swift.String
+  @objc override dynamic public init()
+  convenience public init(url: Swift.String, language: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class Media : ObjectiveC.NSObject {
+  open var type: AmpCore.StreamType
+  open var isLive: Swift.Bool
+  open var autoplay: Swift.Bool
+  open var duration: Swift.Double
+  open var title: Swift.String
+  open var source: Swift.String
+  open var poster: Swift.String
+  open var captions: [AmpCore.Caption]
+  open var dvr: Swift.Bool
+  open var certificateUrl: Swift.String
+  open var serverURL: Swift.String
+  open var jsonResponse: Swift.Bool
+  @objc override dynamic public init()
+  convenience public init(source: Swift.String, type: AmpCore.StreamType, duration: Swift.Double, isLive: Swift.Bool, title: Swift.String = "", poster: Swift.String = "", captions: [AmpCore.Caption] = [Caption]())
+  @objc deinit
+}
+public class Counter {
+  public var currentCount: Swift.Double
+  public init(initialCount: Swift.Double = 0.0, timeIntervalInMS: Swift.Double = 100.0, _ cb: ((Swift.Double) -> Swift.Void)? = nil)
+  public func start()
+  public func pause()
+  public func stop()
+  @objc deinit
+}
+public protocol AmpUIComponent : AnyObject {
+  var container: AmpCore.PlayerUIView? { get set }
+  var player: AmpCore.AmpPlayer? { get set }
+  var observerId: Swift.Int? { get set }
+  init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+}
+@objc open class StreamInfo : ObjectiveC.NSObject {
+  final public let url: Swift.String
+  final public let type: AmpCore.StreamType
+  final public let source: Swift.String
+  final public let bitrate: Swift.Double
+  final public let audioBitrate: Swift.Double
+  final public let throughput: Swift.Double
+  final public let startupTime: Swift.Double
+  final public let resolution: (width: Swift.Double, height: Swift.Double)
+  public init(url: Swift.String, type: AmpCore.StreamType, source: Swift.String, bitrate: Swift.Double, audioBitrate: Swift.Double, throughput: Swift.Double, startupTime: Swift.Double, resolution: (width: Swift.Double, height: Swift.Double))
+  @objc deinit
+  @objc override dynamic public init()
+}
+public typealias StateClosure = (AmpCore.AmpPlayer) -> ()
+open class State {
+  public init(id: Swift.String, value: Swift.String)
+  public init(id: Swift.String, closure: @escaping AmpCore.StateClosure)
+  open func getId() -> Swift.String?
+  open func getValue() -> Swift.String?
+  open func getClosure() -> AmpCore.StateClosure?
+  @objc deinit
+}
+public enum ModelType : Swift.String {
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPad5, iPad6, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadPro9_7, iPadPro10_5, iPadPro12_9, iPadPro2_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6plus, iPhone6S, iPhone6Splus, iPhoneSE, iPhone7, iPhone7plus, iPhone8, iPhone8plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, AppleTV, AppleTV_4K, unrecognized
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc open class AdVendor : ObjectiveC.NSObject {
+  @objc public static var FREEWHEEL: Swift.String
+  @objc public static var GOOGLE: Swift.String
+  @objc public static var YOSPACE: Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers public class StreamDownloader {
+  public func addHandler(handler: AmpCore.StreamHandler)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers open class PosterImage : ObjectiveC.NSObject {
+  @objc dynamic open var image: UIKit.UIImage?
+  public static func getInstance(image: UIKit.UIImage, type: AmpCore.PosterImageType = .poster, mode: UIKit.UIView.ContentMode? = nil, parentView: UIKit.UIView? = nil) -> AmpCore.PosterImage
+  public static func getInstance(url: Swift.String, type: AmpCore.PosterImageType = .poster, mode: UIKit.UIView.ContentMode? = nil, parentView: UIKit.UIView? = nil) -> AmpCore.PosterImage
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class AmpMuteButton : AmpCore.AmpButton {
+  public var speakerImage: UIKit.UIImage? {
+    get
+    set
+  }
+  public var lowSpeakerImage: UIKit.UIImage? {
+    get
+    set
+  }
+  public var noneSpeakerImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @available(*, deprecated, renamed: "speakerImage")
+  public var muteImage: UIKit.UIImage? {
+    get
+    set
+  }
+  public var mutedImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @available(*, deprecated, renamed: "mutedImage")
+  public var unmuteImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onMuteStateChange(isMuted: Swift.Bool)
+  @objc public func onVolumeChanged(_ ampPlayer: AmpCore.AmpPlayer, volumeLevel: Swift.Float)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public protocol StreamHandler {
+  @objc func canHandleUrl(url: Swift.String) -> Swift.Bool
+  @objc optional func handleUrl(url: Swift.String, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc optional func handleAVURLAsset(asset: AVFoundation.AVURLAsset, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc func getStreamType() -> AmpCore.StreamType
+}
+public class StreamAssetHandler : AmpCore.StreamHandler {
+  public init()
+  @objc public func getStreamType() -> AmpCore.StreamType
+  @objc public func canHandleUrl(url: Swift.String) -> Swift.Bool
+  @objc public func handleUrl(url: Swift.String, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc deinit
+}
+extension AmpPlayer {
+  @objc dynamic open var player: AVFoundation.AVPlayer? {
+    @objc get
+  }
+  @objc dynamic open var enableAdUI: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var streamInfo: AmpCore.StreamInfo? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var version: Swift.String {
+    @objc get
+  }
+  open var externalPlaybackDelegate: AmpCore.ExternalPlaybackDelegate? {
+    get
+    set
+  }
+  @objc public static var domain: Swift.String {
+    @objc get
+  }
+  public var isAppInBackground: Swift.Bool {
+    get
+    set
+  }
+  @objc dynamic open var licenseString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var playerItem: AVFoundation.AVPlayerItem? {
+    @objc get
+  }
+  open var allowBackgroundPlayback: Swift.Bool {
+    get
+    set
+  }
+  open var nowPlayingInfoCenterEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var playbackStateOnAppDidBecomeActive: AmpCore.PlaybackState {
+    get
+    set
+  }
+  @objc dynamic open var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var subtitle: Swift.String? {
+    @objc get
+    @objc set
+  }
+  open var observable: AmpCore.Observable<AmpCore.PlayerEventObserver>? {
+    get
+  }
+  open var isStreamAutoRecoveryEnabled: Swift.Bool {
+    get
+    set
+  }
+  @objc dynamic open var url: Swift.String? {
+    @objc get
+  }
+  open var isAdPlaying: Swift.Bool {
+    get
+    set
+  }
+  open var isExternalPlayerPlaying: Swift.Bool {
+    get
+    set
+  }
+  open var timeWithoutAds: Swift.Double? {
+    get
+    set
+  }
+  open var currentTimeWithoutAds: Swift.Double? {
+    get
+    set
+  }
+  open var currentTimeWithAds: Swift.Double {
+    get
+    set
+  }
+  open var totalAdTime: Swift.Double {
+    get
+    set
+  }
+  open var prerollAdTime: Swift.Double {
+    get
+    set
+  }
+  open var hasPostroll: Swift.Bool {
+    get
+    set
+  }
+  @objc dynamic open var media: AmpCore.Media? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var autoplay: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var isDVREnabled: Swift.Bool {
+    @objc get
+    @objc @available(tvOS, unavailable, message: "This value can't be changed on tvOS")
+    set
+  }
+  @objc dynamic open var streamType: AmpCore.StreamType {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var playbackState: AmpCore.PlaybackState {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var timedMetadata: [AVFoundation.AVMetadataItem] {
+    @objc get
+    @objc set
+  }
+  open var overrideDefaultFullscreenBehaviour: Swift.Bool {
+    get
+    set
+  }
+  @objc dynamic open var bufferingState: AmpCore.BufferingState {
+    @objc get
+    @objc set
+  }
+  open var streamDownloader: AmpCore.StreamDownloader? {
+    get
+  }
+  open var isStalled: Swift.Bool {
+    get
+  }
+  @objc dynamic open var playerView: AmpCore.AmpPlayerView? {
+    @objc get
+    @objc set
+  }
+  open var isAutoRecoveryEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var currentSystemVolume: Swift.Float {
+    get
+    set
+  }
+  open var streamAutoRecoveryInterval: Swift.Double {
+    get
+    set
+  }
+  open var streamAutoRecoveryText: Swift.String {
+    get
+    set
+  }
+  open var isLiveStream: Swift.Bool {
+    get
+  }
+  open var posterImage: AmpCore.PosterImage? {
+    get
+    set
+  }
+  open var fps: Swift.Float {
+    get
+  }
+  open var streamDuration: Swift.Double {
+    get
+  }
+  open var dvrStartTime: Swift.Double {
+    get
+  }
+  open var dvrLiveTime: Swift.Double {
+    get
+  }
+  open var currentStreamTime: Swift.Double {
+    get
+  }
+  open var currentUTCTime: Swift.Double? {
+    get
+  }
+  open var playerSpeed: Swift.Float {
+    get
+    set
+  }
+  open var buttonOverlayEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var loadingIndicatorEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var audioTracks: [Swift.String] {
+    get
+  }
+  open var closeCaptions: [Swift.String] {
+    get
+  }
+  open var airplayEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var chromecastEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var logsEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var logColoringEnabled: Swift.Bool {
+    get
+  }
+  open var fowardBufferDuration: Foundation.TimeInterval {
+    get
+    set
+  }
+  open var peakBitRate: Swift.Double {
+    get
+    set
+  }
+  open var loadedTimeRanges: [Foundation.NSValue]? {
+    get
+  }
+  open var certificateUrl: Swift.String? {
+    get
+    set
+  }
+  open var serverUrl: Swift.String? {
+    get
+    set
+  }
+  open var customHeaders: [Swift.String : Swift.String]? {
+    get
+    set
+  }
+  open var fairplayConfiguration: AmpCore.FairplayConfiguration? {
+    get
+    set
+  }
+  open var keepMute: Swift.Bool {
+    get
+    set
+  }
+  @objc dynamic open var inlineCustomView: AmpCore.AmpUIView? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var fullCustomScreenView: AmpCore.AmpUIView? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var parentViewController: UIKit.UIViewController? {
+    @objc get
+  }
+  @objc dynamic open var isFullscreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  open var playerFrame: CoreGraphics.CGRect? {
+    get
+  }
+  open var fullscreenFrame: CoreGraphics.CGRect? {
+    get
+  }
+  @objc dynamic open var isBackgroundSnapshotEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var isPictureInPictureEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic open var pictureDelegate: AVKit.AVPictureInPictureControllerDelegate? {
+    @objc get
+  }
+  @objc dynamic open var pictureController: AVKit.AVPictureInPictureController? {
+    @objc get
+  }
+  open var pictureInPictureDelegate: AVKit.AVPictureInPictureControllerDelegate? {
+    get
+    set
+  }
+  open var isPictureInPictureSupported: Swift.Bool {
+    get
+  }
+  @objc dynamic open func handleWillResignActive()
+  @objc dynamic open func handleDidBecomeActive()
+  @objc(setLicense:) dynamic open func setLicense(_ license: Swift.String)
+  @objc dynamic open func handleAVPlayerAccess(_ notification: Foundation.Notification)
+  @objc dynamic open func play(url streamUrl: Swift.String)
+  @objc dynamic open func play(asset: AVFoundation.AVURLAsset)
+  @available(*, deprecated, message: "Use play(url:configuration)")
+  @objc dynamic open func play(url: Swift.String, certificateUrl: Swift.String, serverURL: Swift.String, customHeaders: [Swift.String : Swift.String]? = nil, jsonResponse: Swift.Bool = false)
+  @objc dynamic open func play(url: Swift.String, configuration: AmpCore.FairplayConfiguration)
+  open func setEventManager(_ url: Swift.String, states: [AmpCore.State], verificationTimeSeconds: Swift.Int)
+  open func setPoster(_ url: Swift.String, type: AmpCore.PosterImageType = .poster, mode: UIKit.UIView.ContentMode? = nil, parentView: UIKit.UIView? = nil)
+  open func setPoster(_ image: UIKit.UIImage, type: AmpCore.PosterImageType = .poster, mode: UIKit.UIView.ContentMode? = nil, parentView: UIKit.UIView? = nil)
+  open func showPosterImage(type: AmpCore.PosterImageType = .poster)
+  open func hidePosterImage(type: AmpCore.PosterImageType = .poster)
+  @objc dynamic open func playerInfoChanged(_ notification: Foundation.Notification)
+  @objc dynamic open func playerItemDidPlayToEndTime(_ notification: Foundation.Notification)
+  @objc dynamic open func playerDidStall(_ notification: Foundation.Notification)
+  @objc dynamic open func isPlaybackComplete() -> Swift.Bool
+  @objc dynamic open func playerItemFailedToPlayToEndTime(_ notification: Foundation.Notification)
+  @objc dynamic open func newErrorLogEntry(_ notification: Foundation.Notification)
+  @objc dynamic open func updatePosition()
+  @objc dynamic open func changePosition()
+  open func setMediaInfo(_ data: [Swift.String : Any])
+  open func play()
+  open func pause()
+  open func replay()
+  open func jumpToTime(seconds: Foundation.TimeInterval)
+  open func goLive()
+  open func seekTo(_ seconds: Foundation.TimeInterval)
+  open func seekTo(_ date: Foundation.Date)
+  open func stop()
+  open func destroy()
+  open func setMediaCharacteristic(_ mediaCharacteristic: Swift.String, type: AmpCore.AmpPlayer.MediaCharacteristic)
+  @objc dynamic open func registerObserver(_ observer: AmpCore.PlayerEventObserver) -> Swift.Int
+  @objc dynamic open func removeObserver(_ id: Swift.Int)
+  open func mute()
+  open func unmute()
+  open func setMaxQualityLevel(level: AmpCore.QualityLevel)
+  open func manageFullScreen()
+  open func toggleCloseCaptions(_ sender: Swift.AnyObject)
+  open func manageCloseCaptions(_ sender: Swift.AnyObject)
+  open func managePictureInPicture()
+  open func tap()
+  public func setSpinnerVisibility(shown: Swift.Bool)
+  open func setCloseCaption(url: Swift.String, forLanguage: Swift.String)
+  open func setThumbnail(url: Swift.String, path: Swift.String? = nil)
+  open func setupFullscreen(handler: AmpCore.FullscreenHandler?, autoFullscreen: Swift.Bool = false)
+}
+open class BaseFullscreenManager : AmpCore.FullscreenManager {
+  weak public var videoView: UIKit.UIView?
+  public var mode: Swift.String
+  weak public var ampPlayer: AmpCore.AmpPlayer?
+  public var isFullscreen: Swift.Bool
+  open var fullscreenHandler: AmpCore.FullscreenHandler?
+  public init(_ ampPlayer: AmpCore.AmpPlayer)
+  public func setFullscreenHandler(handler: AmpCore.FullscreenHandler?)
+  public func toggle()
+  open func enterFullscreen()
+  open func exitFullscreen()
+  open func handleRotation()
+  open func clear()
+  @objc deinit
+}
+public typealias SPCHandler = (Foundation.Data, Foundation.Data, Swift.String, [Swift.String : Swift.String]?) -> (Foundation.Data)
+public typealias CertificateHandler = (Swift.String) -> (Foundation.Data)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc open class AmpPlayer : ObjectiveC.NSObject {
+  @objc public enum MediaCharacteristic : Swift.Int {
+    case closeCaptions = 0
+    case audio = 1
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  open var isMuted: Swift.Bool {
+    get
+    set(value)
+  }
+  open var totalBuffer: Swift.Double {
+    get
+  }
+  open var currentBuffer: Swift.Double {
+    get
+  }
+  open var bufferEnd: Swift.Double {
+    get
+  }
+  @objc(initWithParentView:) convenience public init(parentView: UIKit.UIView)
+  @available(swift, deprecated: 9.0.11, obsoleted: 9.0.12, message: "This will be removed in v9.0.12; use init(parentView:UIView, playerUI: PlayerUIView) instead.")
+  @objc(initWithParentView:inlineUIView:fullScreenUIView:) convenience public init(parentView: UIKit.UIView, inlineUIView: AmpCore.AmpUIView, fullScreenUIView: AmpCore.AmpUIView? = nil)
+  @objc(initWithPlayerUI:) convenience public init(playerUI: AmpCore.PlayerUIView)
+  @objc(initWithParentView:PlayerUI:) convenience public init(parentView: UIKit.UIView, playerUI: AmpCore.PlayerUIView)
+  public func castConnected()
+  public func castDisconnected()
+  open var ignorePause: Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class Observable<T> : ObjectiveC.NSObject {
+  open var observers: [Swift.Int : T]!
+  open var currentId: Swift.Int
+  @objc override dynamic public init()
+  open func registerObserver(_ observer: T) -> Swift.Int
+  open func removeObserver(_ id: Swift.Int)
+  open func forEach(_ fn: (T) -> Swift.Void)
+  @objc deinit
+}
+@objc public class AdInfo : ObjectiveC.NSObject {
+  public var position: Swift.Int
+  public var title: Swift.String
+  public var adDescription: Swift.String
+  public var duration: Swift.Double
+  public var vendor: Swift.String
+  @objc public init(title: Swift.String, adDescription: Swift.String, position: Swift.Int, duration: Swift.Double, vendor: Swift.String = AdVendor.GOOGLE)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class AmpCustomSlider : UIKit.UIControl, AmpCore.AmpUIComponent {
+  weak public var container: AmpCore.PlayerUIView?
+  weak public var player: AmpCore.AmpPlayer? {
+    get
+    set
+  }
+  public var observerId: Swift.Int?
+  public var barHeight: CoreGraphics.CGFloat
+  @objc override dynamic public var bounds: CoreGraphics.CGRect {
+    @objc get
+    @objc set
+  }
+  public var sliderColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var bufferColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var progressColor: UIKit.UIColor {
+    get
+    set
+  }
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc override dynamic public func draw(_ rect: CoreGraphics.CGRect)
+  @objc override dynamic public func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @objc override dynamic public func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @objc override dynamic public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @objc override dynamic public func cancelTracking(with event: UIKit.UIEvent?)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension AmpCustomSlider : AmpCore.PlayerEventObserver {
+  @objc dynamic public func streamReadyToPlay(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func onAdBreakStarted(break: AmpCore.AdBreakInfo?)
+}
+@objc @_inheritsConvenienceInitializers open class AmpPlayBackButton : AmpCore.AmpButton {
+  public var playImage: UIKit.UIImage? {
+    get
+    set
+  }
+  public var pauseImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onPlaybackStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onHandledDidBecomeActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc public func onExternalPlaybackChange(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AmpForwardButton : AmpCore.AmpButton {
+  public var image: UIKit.UIImage? {
+    get
+    set
+  }
+  public var forwardTime: Swift.Double
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public class AudioStreamHandler : AmpCore.StreamHandler {
+  public init()
+  @objc public func getStreamType() -> AmpCore.StreamType
+  @objc public func canHandleUrl(url: Swift.String) -> Swift.Bool
+  public func cancelStreaming()
+  @objc public func handleUrl(url: Swift.String, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc deinit
+}
+public enum AmpLogLevel : Swift.Int {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol AmpLoggerInspector {
+  func onLog(log: Swift.String)
+}
+@_hasMissingDesignatedInitializers open class AmpLogger {
+  public static var ampLoggerInspector: AmpCore.AmpLoggerInspector?
+  public static var logLevel: AmpCore.AmpLogLevel
+  public static var isEnabled: Swift.Bool
+  public static var pathToWrite: Swift.String?
+  public static func verbose(_ message: Swift.String, _ path: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line)
+  public static func debug(_ message: Swift.String, _ path: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line)
+  public static func info(_ message: Swift.String, _ path: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, _ path: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, _ path: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line)
+  public static func deleteFile()
+  @objc deinit
+}
+extension UIImage {
+  public static func imageWithImage(image: UIKit.UIImage, scaledToSize newSize: CoreGraphics.CGSize) -> UIKit.UIImage
+}
+@objc @_inheritsConvenienceInitializers @available(swift, deprecated: 9.0.11, obsoleted: 9.0.12, message: "This will be removed in v9.0.12; please use PlayerUIView instead.")
+open class AmpUIView : AmpCore.PlayerUIView {
+  public var isCaptionOn: Swift.Bool
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension AmpUIView {
+  open func managePlay()
+  open func toggleCloseCaptions(_ sender: Swift.AnyObject)
+  public func enableDefaultCaption()
+  open func manageCloseCaptions(_ sender: Swift.AnyObject?)
+  open func manageFullScreen()
+  open func manageMute()
+  @available(iOS 9.0, *)
+  open func managePIP(_ sender: Swift.AnyObject)
+  open func manageAirplay(_ sender: Swift.AnyObject)
+  open func formatSeconds(_ seconds: Swift.Float) -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable open class PlayerUI : AmpCore.PlayerUIView {
+  @objc @IBInspectable open var airplayIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var rewindImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var rewindIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var forwardImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var forwardIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var playImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var pauseImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var playIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var pipImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var pipIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var muteImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var unMuteImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var muteIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var settingsImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var settingsIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var fullscreenImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var collapseImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var fullscreenIsHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var titleText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var subTitleText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isTitleHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var isSubtitleHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var bufferColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var maximumTrackTintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var progressTintColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var progressBarInset: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  override public var player: AmpCore.AmpPlayer? {
+    get
+    set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func prepareForInterfaceBuilder()
+  @objc deinit
+}
+@objc open class SelectorWithInterval : ObjectiveC.NSObject {
+  public init(target: ObjectiveC.NSObject, selector: ObjectiveC.Selector, frequency: Swift.Double = 1.0, autoStart: Swift.Bool = true)
+  open func start()
+  open func resume()
+  open func pause()
+  open func stop()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum PlaybackState : Swift.Int, Swift.CustomStringConvertible {
+  case stopped = 0
+  case playing
+  case paused
+  case failed
+  case ended
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ReachabilityError : Swift.Error {
+  case FailedToCreateWithAddress(Darwin.sockaddr_in)
+  case FailedToCreateWithHostname(Swift.String)
+  case UnableToSetCallback
+  case UnableToSetDispatchQueue
+  case UnableToGetInitialFlags
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class Reachability {
+  public typealias NetworkReachable = (AmpCore.Reachability) -> ()
+  public typealias NetworkUnreachable = (AmpCore.Reachability) -> ()
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: AmpCore.Reachability.NetworkStatus, b: AmpCore.Reachability.NetworkStatus) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    case none, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: AmpCore.Reachability.Connection, b: AmpCore.Reachability.Connection) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public var whenReachable: AmpCore.Reachability.NetworkReachable?
+  public var whenUnreachable: AmpCore.Reachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: AmpCore.Reachability.Connection {
+    get
+  }
+  public var connection: AmpCore.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  convenience public init?(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  convenience public init?(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  @objc deinit
+}
+extension Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class AmpPiPButton : AmpCore.AmpButton {
+  public var pipImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc override dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StreamLocalHandler : AmpCore.StreamHandler {
+  @objc public func canHandleUrl(url: Swift.String) -> Swift.Bool
+  @objc public func handleAVURLAsset(asset: AVFoundation.AVURLAsset, player: AmpCore.AmpPlayer, success: @escaping (AVFoundation.AVPlayerItem?) -> Swift.Void, failure: @escaping (AmpCore.PlayerError) -> Swift.Void)
+  @objc public func getStreamType() -> AmpCore.StreamType
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AmpSettingsButton : AmpCore.AmpButton {
+  public var image: UIKit.UIImage? {
+    get
+    set
+  }
+  @objc override open func handleTouch(_ sender: Swift.AnyObject)
+  @objc public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public enum FairplayProvider : Swift.Int, Swift.CustomStringConvertible {
+  case custom = 0
+  case verimatrix
+  case azure
+  case expressplay
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol PlayerEventObserver {
+  @objc optional func willHandleUrl(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func willRequestStream()
+  @objc optional func onAVPlayerCreation(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onExternalPlaybackChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onAmpError(_ ampPlayer: AmpCore.AmpPlayer, error: AmpCore.PlayerError, code: Swift.Int, message: Swift.String)
+  @objc optional func onPlaybackStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onPlaybackStateChanged(_:)")
+  @objc optional func onAmpPlaybackStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onBufferingStateChanged(_:)")
+  @objc optional func onAmpBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onBitrateChanged(_ ampPlayer: AmpCore.AmpPlayer, bitrate: Swift.Double)
+  @objc optional func onAudioTrackChanged(_ ampPlayer: AmpCore.AmpPlayer, name: Swift.String)
+  @objc optional func onPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onPositionChange(_:)")
+  @objc optional func onAmpPositionChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onTimeChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onTimeChange(_:)")
+  @objc optional func onAmpTimeChange(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onCuepointReached(_ ampPlayer: AmpCore.AmpPlayer, atTime: Swift.Double)
+  @available(*, unavailable, renamed: "onCuepointReached(_:)")
+  @objc optional func onAmpCuepointReached(_ ampPlayer: AmpCore.AmpPlayer, atTime: Swift.Double)
+  @objc optional func onPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onPlaybackEnded(_:)")
+  @objc optional func onAmpPlaybackEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onReplay(_ ampPlayer: AmpCore.AmpPlayer)
+  @available(*, unavailable, renamed: "onReplay(_:)")
+  @objc optional func onAmpReplay(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onPlaybackStalled(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onHandledResignActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onHandledDidBecomeActive(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onHandleAVPlayerAccess(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onStreamInformationChanged(_ ampPlayer: AmpCore.AmpPlayer, streamInfo: AmpCore.StreamInfo)
+  @objc optional func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onEnableLogs(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onDisableLogs(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onTimedMetadata(_ ampPlayer: AmpCore.AmpPlayer, metadata: [AVFoundation.AVMetadataItem])
+  @objc optional func onSeekBegan()
+  @objc optional func onSeekEnd(_ time: Foundation.TimeInterval)
+  @objc optional func onSeek(_ currentTime: Swift.Double, _ time: Foundation.TimeInterval)
+  @objc optional func onGoLive()
+  @objc optional func onJumpToTime()
+  @objc optional func willCancelPlayback(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func streamReadyToPlay(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onPlaybackInformationChanged(_ tracks: [AVFoundation.AVAssetTrack], player: AmpCore.AmpPlayer)
+  @objc optional func onTap(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onBarShown(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onHiddenBar(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onDoubleTap(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onEnterFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onExitFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onToggleClosedCaption(_ isCaptionOn: Swift.Bool, lang: Swift.String?)
+  @objc optional func willEnterFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func willExitFullscreen(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onRotate(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onAdPeriodStarted()
+  @objc optional func onAdPeriodEnded()
+  @objc optional func onAdError(error: ObjectiveC.NSObject)
+  @objc optional func onAdBreakStarted(break: AmpCore.AdBreakInfo?)
+  @objc optional func onAdBreakEnded(break: AmpCore.AdBreakInfo?)
+  @objc optional func onAdRequested()
+  @objc optional func onAdRequestCompleted()
+  @objc optional func onAdStarted(ad: AmpCore.AdInfo?)
+  @objc optional func onAdEnded(ad: AmpCore.AdInfo?)
+  @objc optional func onAdResumed(ad: AmpCore.AdInfo?)
+  @objc optional func onAdPaused(ad: AmpCore.AdInfo?)
+  @objc optional func onAdSkipped()
+  @objc optional func onAdProceed(time: Swift.Double)
+  @objc optional func onMuteStateChange(isMuted: Swift.Bool)
+  @objc optional func onExternalPlaybackStart(_ device: AmpCore.OTTDevice)
+  @objc optional func onExternalPlaybackEnd(_ device: AmpCore.OTTDevice)
+  @objc optional func onReadyToSendMetadata(_ deviceId: Swift.String, status: Swift.String)
+  @objc optional func onUrlDidSet(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onExternalAdStarted(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onExternalAdEnded(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc optional func onVolumeChanged(_ ampPlayer: AmpCore.AmpPlayer, volumeLevel: Swift.Float)
+}
+@objc open class AmpDurationLabel : UIKit.UILabel, AmpCore.AmpUIComponent {
+  public var liveText: Swift.String
+  public var prefix: Swift.String
+  public var livePrefix: Swift.String?
+  public var container: AmpCore.PlayerUIView?
+  public var player: AmpCore.AmpPlayer? {
+    get
+    set(value)
+  }
+  public var observerId: Swift.Int?
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?)
+  required public init(frame: CoreGraphics.CGRect, player: AmpCore.AmpPlayer?, prefix: Swift.String = "", livePrefix: Swift.String? = nil)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc open func handleTouch(_ sender: Swift.AnyObject)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension AmpDurationLabel : AmpCore.PlayerEventObserver {
+  @objc dynamic public func onBufferingStateChanged(_ ampPlayer: AmpCore.AmpPlayer)
+  @objc dynamic public func willStop(_ ampPlayer: AmpCore.AmpPlayer)
+}
+@_hasMissingDesignatedInitializers open class AmpUtils {
+  public static func urlContentType(_ url: Swift.String) -> Swift.String?
+  public static func urlSuffix(_ url: Swift.String) -> Swift.String?
+  public static func cleanUrl(_ url: Swift.String) -> Swift.String?
+  public static func degreesToRadians(_ degrees: Swift.Float) -> Swift.Float
+  public static func hasSuffix(_ url: Swift.String, suffix: Swift.String) -> Swift.Bool
+  public static func hasSuffix(_ url: Swift.String, suffixes: [Swift.String]) -> Swift.Bool
+  public static func or(_ a: Swift.Bool, b: Swift.Bool) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ContentCheck {
+  @objc deinit
+}
+extension UIDevice {
+  public var type: AmpCore.ModelType {
+    get
+  }
+}
+public struct FullscreenMode {
+  public static let MANUAL: Swift.String
+  public static let AUTO: Swift.String
+}
+@objc public enum PlayerError : Swift.Int, Swift.Error {
+  case unknownAssetFormat = 0
+  case downloadFailed
+  case unknownError
+  case playerItemFailedToPlayToEnd
+  case playerItemErrorLog
+  case invalidLicense
+  case networkConnectionError
+  case drmCKCFailed
+  case drmInvalidCertificate
+  case drmInvalidAssetId
+  case drmNotValidCKCFromKSM
+  case drmNoData
+  case dvrNoDuration
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+}
+extension AmpCore.BufferingState : Swift.Equatable {}
+extension AmpCore.BufferingState : Swift.Hashable {}
+extension AmpCore.BufferingState : Swift.RawRepresentable {}
+extension AmpCore.AmpUIAction : Swift.Equatable {}
+extension AmpCore.AmpUIAction : Swift.Hashable {}
+extension AmpCore.AmpUIAction : Swift.RawRepresentable {}
+extension AmpCore.StreamType : Swift.Equatable {}
+extension AmpCore.StreamType : Swift.Hashable {}
+extension AmpCore.StreamType : Swift.RawRepresentable {}
+extension AmpCore.RNCryptor.Error : Swift.Equatable {}
+extension AmpCore.RNCryptor.Error : Swift.Hashable {}
+extension AmpCore.RNCryptor.Error : Swift.RawRepresentable {}
+extension AmpCore.RNCryptor.DecryptorV3 : AmpCore.RNCryptorType {}
+extension AmpCore.PosterImageType : Swift.Equatable {}
+extension AmpCore.PosterImageType : Swift.Hashable {}
+extension AmpCore.PosterImageType : Swift.RawRepresentable {}
+extension AmpCore.ModelType : Swift.Equatable {}
+extension AmpCore.ModelType : Swift.Hashable {}
+extension AmpCore.ModelType : Swift.RawRepresentable {}
+extension AmpCore.AmpPlayer.MediaCharacteristic : Swift.Equatable {}
+extension AmpCore.AmpPlayer.MediaCharacteristic : Swift.Hashable {}
+extension AmpCore.AmpPlayer.MediaCharacteristic : Swift.RawRepresentable {}
+extension AmpCore.AmpLogLevel : Swift.Equatable {}
+extension AmpCore.AmpLogLevel : Swift.Hashable {}
+extension AmpCore.AmpLogLevel : Swift.RawRepresentable {}
+extension AmpCore.PlaybackState : Swift.Equatable {}
+extension AmpCore.PlaybackState : Swift.Hashable {}
+extension AmpCore.PlaybackState : Swift.RawRepresentable {}
+@available(*, unavailable, renamed: "Connection")
+extension AmpCore.Reachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension AmpCore.Reachability.NetworkStatus : Swift.Hashable {}
+extension AmpCore.Reachability.Connection : Swift.Equatable {}
+extension AmpCore.Reachability.Connection : Swift.Hashable {}
+extension AmpCore.FairplayProvider : Swift.Equatable {}
+extension AmpCore.FairplayProvider : Swift.Hashable {}
+extension AmpCore.FairplayProvider : Swift.RawRepresentable {}
+extension AmpCore.PlayerError : Swift.Equatable {}
+extension AmpCore.PlayerError : Swift.Hashable {}
+extension AmpCore.PlayerError : Swift.RawRepresentable {}

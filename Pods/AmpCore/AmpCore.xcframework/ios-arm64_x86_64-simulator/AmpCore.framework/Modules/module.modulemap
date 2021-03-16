@@ -1,0 +1,11 @@
+framework module AmpCore {
+  umbrella header "AmpCore.h"
+
+  export *
+  module * { export * }
+}
+
+module AmpCore.Swift {
+    header "AmpCore-Swift.h"
+    requires objc
+}

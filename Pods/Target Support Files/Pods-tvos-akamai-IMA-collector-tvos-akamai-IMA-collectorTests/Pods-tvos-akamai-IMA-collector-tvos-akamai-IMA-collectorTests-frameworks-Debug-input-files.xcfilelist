@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests/Pods-tvos-akamai-IMA-collector-tvos-akamai-IMA-collectorTests-frameworks.sh
+${PODS_ROOT}/DZAkamaiTvOS/DZAkamaiTVOSCollector.framework
+${PODS_ROOT}/DZTvOSBase/DzTvOSBase.framework
+${PODS_ROOT}/GoogleAds-IMA-tvOS-SDK/GoogleInteractiveMediaAds.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AmpCore/AmpCore.framework/AmpCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AmpIMA/AmpIMA.framework/AmpIMA

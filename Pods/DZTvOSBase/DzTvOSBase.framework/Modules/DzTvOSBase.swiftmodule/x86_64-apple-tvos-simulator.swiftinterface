@@ -1,0 +1,281 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-tvos13.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DzTvOSBase
+import AdSupport
+@_exported import DzTvOSBase
+import Foundation
+import Network
+import Security
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers public class DZEventManager {
+  public func sendHeartBeatEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayingEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendResumeEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayRequestEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayBackStartEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayerReadyEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPausedEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendPlayBackCompleteEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendContentMileStoneEvent(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo, _ mileStonePercent: Swift.Double) -> DzTvOSBase.DZEventInfo
+  public func setCustomMetaData(customMetaData: [Swift.String : Any])
+  public func sendBufferStart(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendBufferEnd(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendContentLoaded(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendAdImpresssion(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendAdComplete(_ dzPlayerAttributes: DzTvOSBase.DZEventInfo) -> DzTvOSBase.DZEventInfo
+  public func sendCustomEvent(_ eventName: Swift.String, _ dzPlayerAttributes: DzTvOSBase.DZEventInfo, _ customMetaData: [Swift.String : Any]?) -> DzTvOSBase.DZEventInfo
+  @objc deinit
+}
+@objc public enum DZConfigState : Swift.Int {
+  case COLLECTOR_CONNECTED, COLLECTOR_NOT_CONNECTED, CONFIG_INIT_ERROR, CONFIG_INIT
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum Device {
+  case appleTVHD
+  case appleTV4K
+  indirect case simulator(DzTvOSBase.Device)
+  case unknown(Swift.String)
+  public static var current: DzTvOSBase.Device {
+    get
+  }
+  public static var identifier: Swift.String
+  public static func mapToDevice(identifier: Swift.String) -> DzTvOSBase.Device
+  public static func realDevice(from device: DzTvOSBase.Device) -> DzTvOSBase.Device
+  public var screenRatio: (width: Swift.Double, height: Swift.Double) {
+    get
+  }
+  public static var allTVs: [DzTvOSBase.Device] {
+    get
+  }
+  public static var allSimulatorTVs: [DzTvOSBase.Device] {
+    get
+  }
+  public static var allRealDevices: [DzTvOSBase.Device] {
+    get
+  }
+  public static var allSimulators: [DzTvOSBase.Device] {
+    get
+  }
+  public func isOneOf(_ devices: [DzTvOSBase.Device]) -> Swift.Bool
+  public var name: Swift.String? {
+    get
+  }
+  public var systemName: Swift.String? {
+    get
+  }
+  public var systemVersion: Swift.String? {
+    get
+  }
+  public var model: Swift.String? {
+    get
+  }
+  public var localizedModel: Swift.String? {
+    get
+  }
+  public var ppi: Swift.Int? {
+    get
+  }
+  public var isGuidedAccessSessionActive: Swift.Bool {
+    get
+  }
+  public var screenBrightness: Swift.Int {
+    get
+  }
+}
+extension Device : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var safeDescription: Swift.String {
+    get
+  }
+}
+extension Device : Swift.Equatable {
+  public static func == (lhs: DzTvOSBase.Device, rhs: DzTvOSBase.Device) -> Swift.Bool
+}
+public struct DZConfigData {
+  public var fluxDataInterval: Swift.Int
+}
+@_hasMissingDesignatedInitializers public class DZTvOsBaseCollector {
+  public static let shared: DzTvOSBase.DZTvOsBaseCollector
+  public func initialize(_ env: DzTvOSBase.DZEnv, _ configId: Swift.String, onCompletion: @escaping (DzTvOSBase.DZConfigState, DzTvOSBase.DZConfigData) -> Swift.Void)
+  public func reset()
+  public var eventManager: DzTvOSBase.DZEventManager {
+    get
+  }
+  @objc deinit
+}
+public class DZSSLCert {
+  public init(data: Foundation.Data)
+  public init(key: Security.SecKey)
+  @objc deinit
+}
+public class DZSSLSecurity {
+  public var validatedDN: Swift.Bool
+  convenience public init(usePublicKeys: Swift.Bool = false)
+  public init(certs: [DzTvOSBase.DZSSLCert], usePublicKeys: Swift.Bool)
+  public func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+  @objc deinit
+}
+public struct DZQueue<T> {
+  public var count: Swift.Int {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public mutating func enqueue(_ element: T)
+  public mutating func dequeue() -> T?
+  public mutating func removeAll()
+  public var front: T? {
+    get
+  }
+}
+public enum DZEnv : Swift.String {
+  case DEV
+  case STAGING
+  case PROD
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public class DZEventInfo {
+  public var eventId: Swift.String
+  public var eventName: Swift.String
+  public var timeStamp: Swift.Int
+  public var playerVersion: Swift.String
+  public var playerName: Swift.String
+  public var connectionURL: Swift.String
+  public var dzSharedCombinedConnector: Swift.String
+  public var sessionViewID: Swift.String
+  public var dzSdkVersion: Swift.String
+  public var customerCode: Swift.String
+  public var connectorList: Swift.String
+  public var configurationId: Swift.String
+  public var os: Swift.String
+  public var osVersion: Swift.String
+  public var deviceName: Swift.String
+  public var systemName: Swift.String
+  public var systemModel: Swift.String
+  public var systemVersion: Swift.String
+  public var internetServiceProvider: Swift.String
+  public var orientation: Swift.String
+  public var assetId: Swift.String
+  public var userAgent: Swift.String
+  public var playerState: Swift.String
+  public var playerVolume: Swift.Int
+  public var playerBitRate: Swift.Double
+  public var playBackRate: Swift.Float
+  public var playHeadPosition: Swift.Double
+  public var playerItemDuration: Swift.Double
+  public var playerBufferFill: Swift.Double
+  public var toMilliss: Swift.Float64
+  public var fromMilliss: Swift.Float64
+  public var eventList: [Swift.String]
+  public var isMuted: Swift.Bool
+  public var autoStart: Swift.Bool
+  public var controls: Swift.Bool
+  public var defaultPlaybackRate: Swift.Double
+  public var loop: Swift.Bool
+  public var fullscreen: Swift.Bool
+  public var readyState: Swift.String
+  public var streamingProtocol: Swift.String
+  public var streamingType: Swift.String
+  public var numberOfVideos: Swift.Int
+  public var numberOfErrors: Swift.Int
+  public var defaultMuted: Swift.Bool
+  public var timeSinceBufferBegin: Swift.Int
+  public var timeSinceLastFluxData: Swift.Int
+  public var timeSincePaused: Swift.Int
+  public var timeSinceRequested: Swift.Int
+  public var timeSinceSeekBegin: Swift.Int
+  public var timeSinceStarted: Swift.Int
+  public var timeSinceLastRenditionChange: Swift.Int
+  public var totalPlayTime: Swift.Float
+  public var renditionName: Swift.String
+  public var renditionHeight: Swift.Int
+  public var renditionWidth: Swift.Int
+  public var renditionBitrate: Swift.Int
+  public var absShift: Swift.String
+  public var milestonePercent: Swift.Float
+  public var playbackStallCount: Swift.Int
+  public var playbackStallCountAds: Swift.Int
+  public var playbackStallCountContent: Swift.Int
+  public var totalBufferTime: Swift.Int
+  public var playbackStallDuration: Swift.Int
+  public var playbackStallDurationAds: Swift.Int
+  public var playbackStallDurationContent: Swift.Int
+  public var asn: Swift.String
+  public var city: Swift.String
+  public var country: Swift.String
+  public var countryCode: Swift.String
+  public var isp: Swift.String
+  public var latitude: Swift.Double
+  public var longtitude: Swift.Double
+  public var org: Swift.String
+  public var query: Swift.String
+  public var region: Swift.String
+  public var regionName: Swift.String
+  public var zip: Swift.String
+  public var connectionType: Swift.String
+  public var adData: [Swift.String : Any]
+  public var adCount: Swift.Int
+  public var resolutionHeight: Swift.Int
+  public var resolutionWidth: Swift.Int
+  public var title: Swift.String
+  public var errorCode: Swift.Int
+  public var errorMsg: Swift.String
+  public var videoType: Swift.String
+  public var frameRate: Swift.Float
+  public var timeSinceAdRequested: Swift.Int
+  public var timeSinceLastAdFluxData: Swift.Int
+  public var timeSinceAdStarted: Swift.Int
+  public var timeSinceAdPaused: Swift.Int
+  public var timeSinceAdBreakBegin: Swift.Int
+  public var timeSinceLastAdQuartile: Swift.Int
+  public var timeSinceLastAd: Swift.Int
+  public var timeSinceLastMilestone: Swift.Int
+  public var timeSinceLastAdMilestone: Swift.Int
+  public var timeSinceLastHeartbeat: Swift.Int
+  public var timeSinceLastAdHeartbeat: Swift.Int
+  public var timeSinceAdStallStart: Swift.Int
+  public var timeSinceStallStart: Swift.Int
+  public var playbackStallStart: Swift.Int
+  public var playbackStallAdsStart: Swift.Int
+  public var playbackStallContentStart: Swift.Int
+  public var playbackStallEnd: Swift.Int
+  public var playbackStallAdsEnd: Swift.Int
+  public var playbackStallContentEnd: Swift.Int
+  public var extraData: [Swift.String : [Swift.String : Any]]
+  public var sessionId: Swift.String
+  public var sessionCreatedAt: Swift.Int
+  public var playbackDurationContent: Swift.Int
+  public var playbackDurationAds: Swift.Int
+  public var engagementDuration: Swift.Int
+  public var engagementDurationContent: Swift.Int
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DZUtils {
+  public static func getSessionID() -> Swift.String
+  public static func getSessionViewId() -> Swift.String
+  public static func nextViewId() -> Swift.String
+  public static func logPrint(_ message: Swift.String)
+  public static func getSessionCreatedAt() -> Swift.Int
+  public static func getCurrentTimeStamp() -> Swift.Int
+  @objc deinit
+}
+extension DzTvOSBase.DZConfigState : Swift.Equatable {}
+extension DzTvOSBase.DZConfigState : Swift.Hashable {}
+extension DzTvOSBase.DZConfigState : Swift.RawRepresentable {}
+extension DzTvOSBase.DZEnv : Swift.Equatable {}
+extension DzTvOSBase.DZEnv : Swift.Hashable {}
+extension DzTvOSBase.DZEnv : Swift.RawRepresentable {}

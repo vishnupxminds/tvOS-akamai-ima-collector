@@ -1,0 +1,35 @@
+PODS:
+  - AmpCore (9.1.1)
+  - AmpIMA (9.1.1):
+    - AmpCore (~> 9.1.1)
+  - DZAkamaiTvOS (1.7.0):
+    - DZTvOSBase (= 1.6.0)
+  - DZTvOSBase (1.6.0)
+  - GoogleAds-IMA-tvOS-SDK (4.4.1)
+
+DEPENDENCIES:
+  - AmpCore (= 9.1.1)
+  - AmpIMA (= 9.1.1)
+  - DZAkamaiTvOS (= 1.7.0)
+  - DZTvOSBase (= 1.6.0)
+  - GoogleAds-IMA-tvOS-SDK (~> 4.2)
+
+SPEC REPOS:
+  https://gitlab.com/datazoom/pod-specs.git:
+    - DZAkamaiTvOS
+    - DZTvOSBase
+  trunk:
+    - AmpCore
+    - AmpIMA
+    - GoogleAds-IMA-tvOS-SDK
+
+SPEC CHECKSUMS:
+  AmpCore: 1d5c6a1b514d9cf438aea288f1e152b4e1b7ace2
+  AmpIMA: a454e34dba8d7f48eca073ab332f45dadfad2c1e
+  DZAkamaiTvOS: e055deca04af42fe77ad1c50cc4e388bd8f3ab81
+  DZTvOSBase: 964a5ff2569ac99f816a8c4c80c913e4cc67d70f
+  GoogleAds-IMA-tvOS-SDK: c7b3014611f3b59a996bd95ce2a80ae9de9cad5b
+
+PODFILE CHECKSUM: 3e1f2fb75132d83054c378b16d4e3bfeb3134c19
+
+COCOAPODS: 1.10.1

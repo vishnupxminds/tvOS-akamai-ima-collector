@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests : NSObject
+@end
+@implementation PodsDummy_Pods_tvos_akamai_IMA_collector_tvos_akamai_IMA_collectorTests
+@end
